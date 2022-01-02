@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CEA5089C278207EF00B358BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5089B278207EF00B358BD /* AppDelegate.swift */; };
+		CEA5089E278207EF00B358BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5089D278207EF00B358BD /* SceneDelegate.swift */; };
+		CEA508A0278207EF00B358BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5089F278207EF00B358BD /* ViewController.swift */; };
+		CEA508A3278207EF00B358BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA508A1278207EF00B358BD /* Main.storyboard */; };
+		CEA508A5278207F000B358BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA508A4278207F000B358BD /* Assets.xcassets */; };
+		CEA508A8278207F000B358BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA508A6278207F000B358BD /* LaunchScreen.storyboard */; };
+		CEA508B3278207F000B358BD /* ReposListAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA508B2278207F000B358BD /* ReposListAppTests.swift */; };
+		CEA508BE278207F000B358BD /* ReposListAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA508BD278207F000B358BD /* ReposListAppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CEA508AF278207F000B358BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEA50890278207EF00B358BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEA50897278207EF00B358BD;
+			remoteInfo = ReposListApp;
+		};
+		CEA508BA278207F000B358BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEA50890278207EF00B358BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEA50897278207EF00B358BD;
+			remoteInfo = ReposListApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CEA50898278207EF00B358BD /* ReposListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReposListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEA5089B278207EF00B358BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CEA5089D278207EF00B358BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CEA5089F278207EF00B358BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CEA508A2278207EF00B358BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CEA508A4278207F000B358BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEA508A7278207F000B358BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CEA508A9278207F000B358BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEA508AE278207F000B358BD /* ReposListAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReposListAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEA508B2278207F000B358BD /* ReposListAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposListAppTests.swift; sourceTree = "<group>"; };
+		CEA508B4278207F000B358BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEA508B9278207F000B358BD /* ReposListAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReposListAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEA508BD278207F000B358BD /* ReposListAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposListAppUITests.swift; sourceTree = "<group>"; };
+		CEA508BF278207F100B358BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEA50895278207EF00B358BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEA508AB278207F000B358BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEA508B6278207F000B358BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CEA5088F278207EF00B358BD = {
+			isa = PBXGroup;
+			children = (
+				CEA5089A278207EF00B358BD /* ReposListApp */,
+				CEA508B1278207F000B358BD /* ReposListAppTests */,
+				CEA508BC278207F000B358BD /* ReposListAppUITests */,
+				CEA50899278207EF00B358BD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CEA50899278207EF00B358BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEA50898278207EF00B358BD /* ReposListApp.app */,
+				CEA508AE278207F000B358BD /* ReposListAppTests.xctest */,
+				CEA508B9278207F000B358BD /* ReposListAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEA5089A278207EF00B358BD /* ReposListApp */ = {
+			isa = PBXGroup;
+			children = (
+				CEA5089B278207EF00B358BD /* AppDelegate.swift */,
+				CEA5089D278207EF00B358BD /* SceneDelegate.swift */,
+				CEA5089F278207EF00B358BD /* ViewController.swift */,
+				CEA508A1278207EF00B358BD /* Main.storyboard */,
+				CEA508A4278207F000B358BD /* Assets.xcassets */,
+				CEA508A6278207F000B358BD /* LaunchScreen.storyboard */,
+				CEA508A9278207F000B358BD /* Info.plist */,
+			);
+			path = ReposListApp;
+			sourceTree = "<group>";
+		};
+		CEA508B1278207F000B358BD /* ReposListAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				CEA508B2278207F000B358BD /* ReposListAppTests.swift */,
+				CEA508B4278207F000B358BD /* Info.plist */,
+			);
+			path = ReposListAppTests;
+			sourceTree = "<group>";
+		};
+		CEA508BC278207F000B358BD /* ReposListAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CEA508BD278207F000B358BD /* ReposListAppUITests.swift */,
+				CEA508BF278207F100B358BD /* Info.plist */,
+			);
+			path = ReposListAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEA50897278207EF00B358BD /* ReposListApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEA508C2278207F100B358BD /* Build configuration list for PBXNativeTarget "ReposListApp" */;
+			buildPhases = (
+				CEA50894278207EF00B358BD /* Sources */,
+				CEA50895278207EF00B358BD /* Frameworks */,
+				CEA50896278207EF00B358BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReposListApp;
+			productName = ReposListApp;
+			productReference = CEA50898278207EF00B358BD /* ReposListApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CEA508AD278207F000B358BD /* ReposListAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEA508C5278207F100B358BD /* Build configuration list for PBXNativeTarget "ReposListAppTests" */;
+			buildPhases = (
+				CEA508AA278207F000B358BD /* Sources */,
+				CEA508AB278207F000B358BD /* Frameworks */,
+				CEA508AC278207F000B358BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEA508B0278207F000B358BD /* PBXTargetDependency */,
+			);
+			name = ReposListAppTests;
+			productName = ReposListAppTests;
+			productReference = CEA508AE278207F000B358BD /* ReposListAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CEA508B8278207F000B358BD /* ReposListAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEA508C8278207F100B358BD /* Build configuration list for PBXNativeTarget "ReposListAppUITests" */;
+			buildPhases = (
+				CEA508B5278207F000B358BD /* Sources */,
+				CEA508B6278207F000B358BD /* Frameworks */,
+				CEA508B7278207F000B358BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEA508BB278207F000B358BD /* PBXTargetDependency */,
+			);
+			name = ReposListAppUITests;
+			productName = ReposListAppUITests;
+			productReference = CEA508B9278207F000B358BD /* ReposListAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEA50890278207EF00B358BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					CEA50897278207EF00B358BD = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					CEA508AD278207F000B358BD = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = CEA50897278207EF00B358BD;
+					};
+					CEA508B8278207F000B358BD = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = CEA50897278207EF00B358BD;
+					};
+				};
+			};
+			buildConfigurationList = CEA50893278207EF00B358BD /* Build configuration list for PBXProject "ReposListApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEA5088F278207EF00B358BD;
+			productRefGroup = CEA50899278207EF00B358BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEA50897278207EF00B358BD /* ReposListApp */,
+				CEA508AD278207F000B358BD /* ReposListAppTests */,
+				CEA508B8278207F000B358BD /* ReposListAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEA50896278207EF00B358BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEA508A8278207F000B358BD /* LaunchScreen.storyboard in Resources */,
+				CEA508A5278207F000B358BD /* Assets.xcassets in Resources */,
+				CEA508A3278207EF00B358BD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEA508AC278207F000B358BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEA508B7278207F000B358BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEA50894278207EF00B358BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEA508A0278207EF00B358BD /* ViewController.swift in Sources */,
+				CEA5089C278207EF00B358BD /* AppDelegate.swift in Sources */,
+				CEA5089E278207EF00B358BD /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEA508AA278207F000B358BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEA508B3278207F000B358BD /* ReposListAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEA508B5278207F000B358BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEA508BE278207F000B358BD /* ReposListAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEA508B0278207F000B358BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEA50897278207EF00B358BD /* ReposListApp */;
+			targetProxy = CEA508AF278207F000B358BD /* PBXContainerItemProxy */;
+		};
+		CEA508BB278207F000B358BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEA50897278207EF00B358BD /* ReposListApp */;
+			targetProxy = CEA508BA278207F000B358BD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CEA508A1278207EF00B358BD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEA508A2278207EF00B358BD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CEA508A6278207F000B358BD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEA508A7278207F000B358BD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEA508C0278207F100B358BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CEA508C1278207F100B358BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEA508C3278207F100B358BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V3WRHMP6AF;
+				INFOPLIST_FILE = ReposListApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Attalla.ReposListApp.ReposListApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEA508C4278207F100B358BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V3WRHMP6AF;
+				INFOPLIST_FILE = ReposListApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Attalla.ReposListApp.ReposListApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CEA508C6278207F100B358BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V3WRHMP6AF;
+				INFOPLIST_FILE = ReposListAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Attalla.ReposListApp.ReposListAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReposListApp.app/ReposListApp";
+			};
+			name = Debug;
+		};
+		CEA508C7278207F100B358BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V3WRHMP6AF;
+				INFOPLIST_FILE = ReposListAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Attalla.ReposListApp.ReposListAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReposListApp.app/ReposListApp";
+			};
+			name = Release;
+		};
+		CEA508C9278207F100B358BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V3WRHMP6AF;
+				INFOPLIST_FILE = ReposListAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Attalla.ReposListApp.ReposListAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ReposListApp;
+			};
+			name = Debug;
+		};
+		CEA508CA278207F100B358BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V3WRHMP6AF;
+				INFOPLIST_FILE = ReposListAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Attalla.ReposListApp.ReposListAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ReposListApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEA50893278207EF00B358BD /* Build configuration list for PBXProject "ReposListApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEA508C0278207F100B358BD /* Debug */,
+				CEA508C1278207F100B358BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEA508C2278207F100B358BD /* Build configuration list for PBXNativeTarget "ReposListApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEA508C3278207F100B358BD /* Debug */,
+				CEA508C4278207F100B358BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEA508C5278207F100B358BD /* Build configuration list for PBXNativeTarget "ReposListAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEA508C6278207F100B358BD /* Debug */,
+				CEA508C7278207F100B358BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEA508C8278207F100B358BD /* Build configuration list for PBXNativeTarget "ReposListAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEA508C9278207F100B358BD /* Debug */,
+				CEA508CA278207F100B358BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEA50890278207EF00B358BD /* Project object */;
+}
