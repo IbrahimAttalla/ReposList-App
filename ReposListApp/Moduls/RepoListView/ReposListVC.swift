@@ -13,6 +13,11 @@ class ReposListVC: UIViewController {
         super.viewDidLoad()
         self.navigationController?.navigationBar.isHidden = true
 
+        let gateway = DataGetway()
+        gateway.fetchReposList() { (response) in
+            print(" vc response " , response.value?.first)
+            print(" vc error " , response.error?.localizedDescription ?? "")
+        }
     }
 
 
