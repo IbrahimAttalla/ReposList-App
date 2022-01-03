@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ReposListVC.swift
 //  ReposListApp
 //
 //  Created by Ebrahim Attalla on 1/2/22.
@@ -7,13 +7,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ReposListVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        self.navigationController?.navigationBar.isHidden = true
+
     }
 
 
-}
 
+}

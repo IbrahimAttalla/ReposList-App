@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		CEA5089C278207EF00B358BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5089B278207EF00B358BD /* AppDelegate.swift */; };
-		CEA5089E278207EF00B358BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5089D278207EF00B358BD /* SceneDelegate.swift */; };
-		CEA508A0278207EF00B358BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5089F278207EF00B358BD /* ViewController.swift */; };
 		CEA508A3278207EF00B358BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA508A1278207EF00B358BD /* Main.storyboard */; };
 		CEA508A5278207F000B358BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA508A4278207F000B358BD /* Assets.xcassets */; };
 		CEA508A8278207F000B358BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA508A6278207F000B358BD /* LaunchScreen.storyboard */; };
 		CEA508B3278207F000B358BD /* ReposListAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA508B2278207F000B358BD /* ReposListAppTests.swift */; };
 		CEA508BE278207F000B358BD /* ReposListAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA508BD278207F000B358BD /* ReposListAppUITests.swift */; };
+		CEA508DF27820A1F00B358BD /* ReposListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA508DD27820A1F00B358BD /* ReposListVC.swift */; };
+		CEA508E027820A1F00B358BD /* ReposListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA508DE27820A1F00B358BD /* ReposListVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +37,6 @@
 /* Begin PBXFileReference section */
 		CEA50898278207EF00B358BD /* ReposListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReposListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA5089B278207EF00B358BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CEA5089D278207EF00B358BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CEA5089F278207EF00B358BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CEA508A2278207EF00B358BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEA508A4278207F000B358BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEA508A7278207F000B358BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +47,8 @@
 		CEA508B9278207F000B358BD /* ReposListAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReposListAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA508BD278207F000B358BD /* ReposListAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposListAppUITests.swift; sourceTree = "<group>"; };
 		CEA508BF278207F100B358BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEA508DD27820A1F00B358BD /* ReposListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposListVC.swift; sourceTree = "<group>"; };
+		CEA508DE27820A1F00B358BD /* ReposListVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReposListVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +99,8 @@
 		CEA5089A278207EF00B358BD /* ReposListApp */ = {
 			isa = PBXGroup;
 			children = (
+				CEA508DA278209B000B358BD /* Moduls */,
 				CEA5089B278207EF00B358BD /* AppDelegate.swift */,
-				CEA5089D278207EF00B358BD /* SceneDelegate.swift */,
-				CEA5089F278207EF00B358BD /* ViewController.swift */,
-				CEA508A1278207EF00B358BD /* Main.storyboard */,
 				CEA508A4278207F000B358BD /* Assets.xcassets */,
 				CEA508A6278207F000B358BD /* LaunchScreen.storyboard */,
 				CEA508A9278207F000B358BD /* Info.plist */,
@@ -126,6 +124,32 @@
 				CEA508BF278207F100B358BD /* Info.plist */,
 			);
 			path = ReposListAppUITests;
+			sourceTree = "<group>";
+		};
+		CEA508DA278209B000B358BD /* Moduls */ = {
+			isa = PBXGroup;
+			children = (
+				CEA508DC278209DE00B358BD /* RepoDetailsView */,
+				CEA508DB278209BE00B358BD /* RepoListView */,
+				CEA508A1278207EF00B358BD /* Main.storyboard */,
+			);
+			path = Moduls;
+			sourceTree = "<group>";
+		};
+		CEA508DB278209BE00B358BD /* RepoListView */ = {
+			isa = PBXGroup;
+			children = (
+				CEA508DD27820A1F00B358BD /* ReposListVC.swift */,
+				CEA508DE27820A1F00B358BD /* ReposListVC.xib */,
+			);
+			path = RepoListView;
+			sourceTree = "<group>";
+		};
+		CEA508DC278209DE00B358BD /* RepoDetailsView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RepoDetailsView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +257,7 @@
 			files = (
 				CEA508A8278207F000B358BD /* LaunchScreen.storyboard in Resources */,
 				CEA508A5278207F000B358BD /* Assets.xcassets in Resources */,
+				CEA508E027820A1F00B358BD /* ReposListVC.xib in Resources */,
 				CEA508A3278207EF00B358BD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,9 +283,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEA508A0278207EF00B358BD /* ViewController.swift in Sources */,
+				CEA508DF27820A1F00B358BD /* ReposListVC.swift in Sources */,
 				CEA5089C278207EF00B358BD /* AppDelegate.swift in Sources */,
-				CEA5089E278207EF00B358BD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +463,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V3WRHMP6AF;
 				INFOPLIST_FILE = ReposListApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -446,7 +471,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Attalla.ReposListApp.ReposListApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -458,6 +483,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V3WRHMP6AF;
 				INFOPLIST_FILE = ReposListApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -465,7 +491,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Attalla.ReposListApp.ReposListApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
