@@ -10,7 +10,7 @@ import Foundation
 
 
 protocol DataServiceProtocol {
-    func fetchReposList( completion: @escaping (_ responce: Result<[Bool], ServiceError> ) -> () )
+    func fetchReposList( completion: @escaping (_ responce: Result<[Repo], ServiceError> ) -> () )
 }
 
 
@@ -24,7 +24,7 @@ class DataGetway: DataServiceProtocol {
     let apiClient: APIClient
     init(apiClient: APIClient = APIClientImp()) { self.apiClient = apiClient }
 
-    func fetchReposList( completion: @escaping (_ responce: Result<[Bool], ServiceError> ) -> ()) {
+    func fetchReposList( completion: @escaping (_ responce: Result<[Repo], ServiceError> ) -> ()) {
         let apiURL = "/repositories"
         let params =  ""
         apiClient.getRequest(apiURL: apiURL, withParameter: params ) { (response) in
@@ -33,6 +33,20 @@ class DataGetway: DataServiceProtocol {
 
 
                 print("gateWay Response value " , value)
+                guard let dataResponse = response.value else { return }
+                do {
+                    let decoder = JSONDecoder()
+                    let list = try decoder.decode([Repo].self, from:dataResponse as! Data)
+
+                    print(" 😉😉 List Arr ==>> \(list.count) item here    ... " ,list.first )
+
+                    completion(.success(list))
+
+                }
+                catch let err {
+                    completion(.failure(.custom(err.localizedDescription ?? "")))
+                }
+
                 
             case .failure(let error):
                 completion(.failure(error))

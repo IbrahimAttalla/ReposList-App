@@ -76,6 +76,8 @@
 		CEA508BE278207F000B358BD /* ReposListAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA508BD278207F000B358BD /* ReposListAppUITests.swift */; };
 		CEA508DF27820A1F00B358BD /* ReposListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA508DD27820A1F00B358BD /* ReposListVC.swift */; };
 		CEA508E027820A1F00B358BD /* ReposListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA508DE27820A1F00B358BD /* ReposListVC.xib */; };
+		CEE9EF352784673B0095E11F /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE9EF342784673B0095E11F /* Repo.swift */; };
+		CEE9EF3A278467580095E11F /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE9EF39278467580095E11F /* Owner.swift */; };
 		D010B2A261AAF1593F7A3CF6 /* Pods_ReposListApp_ReposListAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D22F8C5F17EA74573994F395 /* Pods_ReposListApp_ReposListAppUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -176,6 +178,8 @@
 		CEA508BF278207F100B358BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEA508DD27820A1F00B358BD /* ReposListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposListVC.swift; sourceTree = "<group>"; };
 		CEA508DE27820A1F00B358BD /* ReposListVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReposListVC.xib; sourceTree = "<group>"; };
+		CEE9EF342784673B0095E11F /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
+		CEE9EF39278467580095E11F /* Owner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
 		D22F8C5F17EA74573994F395 /* Pods_ReposListApp_ReposListAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReposListApp_ReposListAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D505AD6BFE24C9FE7F3063BB /* Pods-ReposListApp-ReposListAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReposListApp-ReposListAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-ReposListApp-ReposListAppUITests/Pods-ReposListApp-ReposListAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D825DEE5DFC2F842780243EA /* Pods_ReposListApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReposListApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -227,6 +231,7 @@
 		CE914E8E27831B8300B743E2 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				CEE9EF26278466EF0095E11F /* Model */,
 				CE914EBA278334E000B743E2 /* GateWay */,
 				CE914EAB278324CC00B743E2 /* Core */,
 			);
@@ -472,6 +477,15 @@
 			children = (
 			);
 			path = RepoDetailsView;
+			sourceTree = "<group>";
+		};
+		CEE9EF26278466EF0095E11F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CEE9EF342784673B0095E11F /* Repo.swift */,
+				CEE9EF39278467580095E11F /* Owner.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		ED56F71996E2FE10E03F974E /* Frameworks */ = {
@@ -765,6 +779,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEE9EF352784673B0095E11F /* Repo.swift in Sources */,
 				CE914EC42783354600B743E2 /* Result.swift in Sources */,
 				CE914F772783791D00B743E2 /* BaseViewController.swift in Sources */,
 				CE914EBF2783352500B743E2 /* ServiceError.swift in Sources */,
@@ -795,6 +810,7 @@
 				CE914F222783790600B743E2 /* UIview+GradiantColor.swift in Sources */,
 				CE914F792783791D00B743E2 /* Dynamic.swift in Sources */,
 				CE914F132783790600B743E2 /* String + height.swift in Sources */,
+				CEE9EF3A278467580095E11F /* Owner.swift in Sources */,
 				CE914EB1278324CC00B743E2 /* State.swift in Sources */,
 				CE914EC92783480200B743E2 /* ApiClient.swift in Sources */,
 			);
