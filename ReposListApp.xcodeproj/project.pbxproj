@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		2B1242D3F9898D67C934B31E /* Pods_ReposListApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D825DEE5DFC2F842780243EA /* Pods_ReposListApp.framework */; };
 		73839994636D6CB23704239C /* Pods_ReposListAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 992A7952BAC4ECC70F73BD80 /* Pods_ReposListAppTests.framework */; };
+		CE8631962784DEA0004CA920 /* RepoDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8631942784DEA0004CA920 /* RepoDetailsVC.swift */; };
+		CE8631972784DEA0004CA920 /* RepoDetailsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE8631952784DEA0004CA920 /* RepoDetailsVC.xib */; };
+		CE86319F2784DEE4004CA920 /* RepoDetailsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE86319E2784DEE4004CA920 /* RepoDetailsVM.swift */; };
+		CE8631A72784F0BF004CA920 /* RepoListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8631A62784F0BF004CA920 /* RepoListConfigurator.swift */; };
+		CE8631BF2784F2C6004CA920 /* RepoDetailsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8631BE2784F2C6004CA920 /* RepoDetailsConfigurator.swift */; };
+		CE8631C42784F41C004CA920 /* RepoListRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8631C32784F41C004CA920 /* RepoListRoute.swift */; };
 		CE914EA227831EEA00B743E2 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE914EA027831EEA00B743E2 /* Config.swift */; };
 		CE914EA327831EEA00B743E2 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE914EA127831EEA00B743E2 /* Config.plist */; };
 		CE914EAF278324CC00B743E2 /* LoadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE914EAC278324CC00B743E2 /* LoadImage.swift */; };
@@ -109,6 +115,12 @@
 		86015F1AEA61A4D2D8FC99BA /* Pods-ReposListApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReposListApp.debug.xcconfig"; path = "Target Support Files/Pods-ReposListApp/Pods-ReposListApp.debug.xcconfig"; sourceTree = "<group>"; };
 		992A7952BAC4ECC70F73BD80 /* Pods_ReposListAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReposListAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBC51B09F8D56EF3BD9C6897 /* Pods-ReposListAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReposListAppTests.release.xcconfig"; path = "Target Support Files/Pods-ReposListAppTests/Pods-ReposListAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		CE8631942784DEA0004CA920 /* RepoDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoDetailsVC.swift; sourceTree = "<group>"; };
+		CE8631952784DEA0004CA920 /* RepoDetailsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepoDetailsVC.xib; sourceTree = "<group>"; };
+		CE86319E2784DEE4004CA920 /* RepoDetailsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoDetailsVM.swift; sourceTree = "<group>"; };
+		CE8631A62784F0BF004CA920 /* RepoListConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoListConfigurator.swift; sourceTree = "<group>"; };
+		CE8631BE2784F2C6004CA920 /* RepoDetailsConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoDetailsConfigurator.swift; sourceTree = "<group>"; };
+		CE8631C32784F41C004CA920 /* RepoListRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoListRoute.swift; sourceTree = "<group>"; };
 		CE914EA027831EEA00B743E2 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		CE914EA127831EEA00B743E2 /* Config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
 		CE914EAC278324CC00B743E2 /* LoadImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadImage.swift; sourceTree = "<group>"; };
@@ -221,6 +233,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE8631932784DE77004CA920 /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+				CE8631952784DEA0004CA920 /* RepoDetailsVC.xib */,
+			);
+			path = Xib;
+			sourceTree = "<group>";
+		};
 		CE914E8C27831B4400B743E2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -228,13 +248,6 @@
 				CEE701DD27849A4000692B67 /* Colors.xcassets */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		CE914E8D27831B4F00B743E2 /* SupportFiles */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SupportFiles;
 			sourceTree = "<group>";
 		};
 		CE914E8E27831B8300B743E2 /* Services */ = {
@@ -436,7 +449,6 @@
 				CE914EFE278378EA00B743E2 /* Utilities */,
 				CE914E8E27831B8300B743E2 /* Services */,
 				CEA508DA278209B000B358BD /* Moduls */,
-				CE914E8D27831B4F00B743E2 /* SupportFiles */,
 				CE914E8C27831B4400B743E2 /* Resources */,
 				CEA508A6278207F000B358BD /* LaunchScreen.storyboard */,
 				CEA508A9278207F000B358BD /* Info.plist */,
@@ -480,6 +492,8 @@
 				CEA508DD27820A1F00B358BD /* ReposListVC.swift */,
 				CE914F9527837A9C00B743E2 /* ReposListVM.swift */,
 				CEE9EF3E278468E60095E11F /* RepoCell.swift */,
+				CE8631A62784F0BF004CA920 /* RepoListConfigurator.swift */,
+				CE8631C32784F41C004CA920 /* RepoListRoute.swift */,
 			);
 			path = RepoListView;
 			sourceTree = "<group>";
@@ -487,6 +501,10 @@
 		CEA508DC278209DE00B358BD /* RepoDetailsView */ = {
 			isa = PBXGroup;
 			children = (
+				CE8631932784DE77004CA920 /* Xib */,
+				CE8631942784DEA0004CA920 /* RepoDetailsVC.swift */,
+				CE86319E2784DEE4004CA920 /* RepoDetailsVM.swift */,
+				CE8631BE2784F2C6004CA920 /* RepoDetailsConfigurator.swift */,
 			);
 			path = RepoDetailsView;
 			sourceTree = "<group>";
@@ -642,6 +660,7 @@
 				CE914F4E2783791400B743E2 /* OpenSans-Italic.ttf in Resources */,
 				CE914F612783791400B743E2 /* SFPRODISPLAYBLACKITALIC.OTF in Resources */,
 				CE914F582783791400B743E2 /* ArbFONTS-Tajawal-ExtraLight.ttf in Resources */,
+				CE8631972784DEA0004CA920 /* RepoDetailsVC.xib in Resources */,
 				CE914F532783791400B743E2 /* OpenSans-ExtraBoldItalic.ttf in Resources */,
 				CE914F5F2783791400B743E2 /* SFPRODISPLAYHEAVYITALIC.OTF in Resources */,
 				CEA508A8278207F000B358BD /* LaunchScreen.storyboard in Resources */,
@@ -803,11 +822,13 @@
 			files = (
 				CEE9EF352784673B0095E11F /* Repo.swift in Sources */,
 				CE914EC42783354600B743E2 /* Result.swift in Sources */,
+				CE8631962784DEA0004CA920 /* RepoDetailsVC.swift in Sources */,
 				CE914F772783791D00B743E2 /* BaseViewController.swift in Sources */,
 				CEE701F62784B3E600692B67 /* Array+extension.swift in Sources */,
 				CE914EBF2783352500B743E2 /* ServiceError.swift in Sources */,
 				CE914EB6278325F700B743E2 /* Reachability.swift in Sources */,
 				CEA508DF27820A1F00B358BD /* ReposListVC.swift in Sources */,
+				CE8631C42784F41C004CA920 /* RepoListRoute.swift in Sources */,
 				CE914F1B2783790600B743E2 /* TextField-color-Extention.swift in Sources */,
 				CE914EAF278324CC00B743E2 /* LoadImage.swift in Sources */,
 				CE914F1F2783790600B743E2 /* UIView+SomeCorner.swift in Sources */,
@@ -825,18 +846,21 @@
 				CEA5089C278207EF00B358BD /* AppDelegate.swift in Sources */,
 				CE914F232783790600B743E2 /* Double + RoundToPrecentage.swift in Sources */,
 				CE914F9627837A9C00B743E2 /* ReposListVM.swift in Sources */,
+				CE86319F2784DEE4004CA920 /* RepoDetailsVM.swift in Sources */,
 				CE914F202783790600B743E2 /* AnimatedMaskLabel.swift in Sources */,
 				CE914F762783791D00B743E2 /* Route.swift in Sources */,
 				CE914F752783791D00B743E2 /* UIViewController+Route.swift in Sources */,
 				CE914F142783790600B743E2 /* ViewDesignable.swift in Sources */,
 				CE914F162783790600B743E2 /* UIColor + theme.swift in Sources */,
 				CE914F152783790600B743E2 /* UIColor+Hex.swift in Sources */,
+				CE8631A72784F0BF004CA920 /* RepoListConfigurator.swift in Sources */,
 				CE914F222783790600B743E2 /* UIview+GradiantColor.swift in Sources */,
 				CE914F792783791D00B743E2 /* Dynamic.swift in Sources */,
 				CE914F132783790600B743E2 /* String + height.swift in Sources */,
 				CEE9EF3A278467580095E11F /* Owner.swift in Sources */,
 				CE914EB1278324CC00B743E2 /* State.swift in Sources */,
 				CE914EC92783480200B743E2 /* ApiClient.swift in Sources */,
+				CE8631BF2784F2C6004CA920 /* RepoDetailsConfigurator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,7 +13,8 @@ class ReposListVC: BaseViewController {
     
     @IBOutlet weak var reposListTV: UITableView!
     @IBOutlet weak var searchQuary: UISearchBar!
-    lazy var vm: ReposListVM = {
+    
+     var vm: ReposListVM! = {
         return ReposListVM()
     }()
     
@@ -34,8 +35,6 @@ class ReposListVC: BaseViewController {
         reposListTV.dataSource = self
         reposListTV.register(UINib(nibName: RepoCell.idAndNib, bundle: nil), forCellReuseIdentifier: RepoCell.idAndNib)
         reposListTV.separatorStyle = .none
-        reposListTV.estimatedRowHeight = 130.0
-        reposListTV.rowHeight = UITableView.automaticDimension
         
         vm.fetchReposList()
         hideKeyboardWhenTappedAround()
@@ -44,21 +43,17 @@ class ReposListVC: BaseViewController {
     
     func initBind(){
         vm.isLoading.bind { (loadingStatus) in
-            print("loadingStatus = " , loadingStatus)
+           // print("loadingStatus = " , loadingStatus)
             switch loadingStatus{
             case true:
                 DispatchQueue.main.async {
                     self.reposListTV.isSkeletonable = true
                     self.reposListTV.showAnimatedGradientSkeleton()
-                    //                    SVProgressHUD.show()
-                    //                    SVProgressHUD.setDefaultMaskType(.black)
                 }
             case false:
                 DispatchQueue.main.async {
-                    //  SVProgressHUD.dismiss()
                     self.reposListTV.stopSkeletonAnimation()
                     self.reposListTV.hideSkeleton()
-                    //                    SVProgressHUD.setDefaultMaskType(.clear)
                 }
             }
         }
@@ -88,7 +83,6 @@ class ReposListVC: BaseViewController {
         }
         
         vm.successMessage.bind{msg in
-            //  self.displayTost(message: msg)
             SVProgressHUD.dismiss()
             super.showToastWith(msg)
             
@@ -96,7 +90,6 @@ class ReposListVC: BaseViewController {
         
         
         vm.errorMessage.bind{msg in
-            //           self.displayError(message: msg)
             DispatchQueue.main.async(execute: {
                 SVProgressHUD.dismiss()
                 super.presentAlert(withTitle: "", message: msg)
@@ -128,7 +121,6 @@ extension ReposListVC: UITableViewDelegate , UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return (vm.reposList.value?.count ?? 0) == 0 ? 3:vm.reposList.value?.count ?? 0
-        //   return vm.reposList.value?.count ?? 0
     }
     
     
@@ -143,14 +135,13 @@ extension ReposListVC: UITableViewDelegate , UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return  130.0 // UITableView.automaticDimension
+        return  130.0
     }
     
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        if tableView == reposListTV{
-            print("last index = ", indexPath.row)
-            if indexPath.row == (vm.reposList.value!.count)-1 {
+        if searchQuary.text?.count ?? 0 < 2{
+        if indexPath.row == (vm.reposList.value!.count)-1 {
                 vm.loadMoreData()
             }
         }
@@ -158,7 +149,7 @@ extension ReposListVC: UITableViewDelegate , UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let selectedRepo = vm.reposList.value?[indexPath.row] else { return }
-        print(selectedRepo.name)
+        navigateTo(RepoListRoute.repoDetailsView(selectedRepo))
     }
 }
 

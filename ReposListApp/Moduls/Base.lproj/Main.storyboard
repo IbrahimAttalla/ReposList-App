@@ -19,6 +19,14 @@
             </objects>
             <point key="canvasLocation" x="997.10144927536237" y="105.80357142857143"/>
         </scene>
+        <!--Repo DetailsVC-->
+        <scene sceneID="I4s-Zr-e67">
+            <objects>
+                <viewController storyboardIdentifier="RepoDetailsVCID" id="XfB-Wa-4EC" customClass="RepoDetailsVC" customModule="ReposListApp" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kXn-pb-1cj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1848" y="106"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="psc-Fz-Q7z">
             <objects>

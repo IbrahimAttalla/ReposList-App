@@ -22,7 +22,7 @@
                         <rect key="frame" x="10" y="10" width="360" height="114"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="REY-82-ZHc">
-                                <rect key="frame" x="10" y="25" width="80" height="80"/>
+                                <rect key="frame" x="10" y="17" width="80" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="REY-82-ZHc" secondAttribute="height" id="URR-n2-8N0"/>
                                     <constraint firstAttribute="height" constant="80" id="tS2-9K-XCd"/>
@@ -41,7 +41,7 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t2y-Ba-TTi">
-                                <rect key="frame" x="100" y="25" width="250" height="30"/>
+                                <rect key="frame" x="100" y="17" width="250" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="mJM-Et-Sg6"/>
                                 </constraints>
@@ -53,7 +53,7 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Sr-33-MS5">
-                                <rect key="frame" x="100" y="65" width="250" height="39"/>
+                                <rect key="frame" x="100" y="57" width="250" height="47"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -62,7 +62,7 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="bvr-4Z-PUn">
-                                <rect key="frame" x="40" y="55" width="20" height="20"/>
+                                <rect key="frame" x="40" y="47" width="20" height="20"/>
                                 <color key="color" red="0.21440743070000001" green="0.33216505219999998" blue="0.40156702160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </activityIndicatorView>
                         </subviews>
@@ -71,10 +71,10 @@
                             <constraint firstItem="bvr-4Z-PUn" firstAttribute="centerY" secondItem="REY-82-ZHc" secondAttribute="centerY" id="9HA-pv-Ils"/>
                             <constraint firstItem="7Sr-33-MS5" firstAttribute="trailing" secondItem="t2y-Ba-TTi" secondAttribute="trailing" id="NKx-kb-J7Q"/>
                             <constraint firstItem="REY-82-ZHc" firstAttribute="leading" secondItem="hGe-OH-ifG" secondAttribute="leading" constant="10" id="Spi-GS-oIh"/>
+                            <constraint firstItem="REY-82-ZHc" firstAttribute="centerY" secondItem="hGe-OH-ifG" secondAttribute="centerY" id="Utu-rB-r7e"/>
                             <constraint firstItem="bvr-4Z-PUn" firstAttribute="centerX" secondItem="REY-82-ZHc" secondAttribute="centerX" id="XQd-Mm-SM8"/>
                             <constraint firstItem="7Sr-33-MS5" firstAttribute="top" secondItem="t2y-Ba-TTi" secondAttribute="bottom" constant="10" id="Z4v-Rr-Zfj"/>
                             <constraint firstItem="t2y-Ba-TTi" firstAttribute="top" secondItem="REY-82-ZHc" secondAttribute="top" id="dWL-rx-vhk"/>
-                            <constraint firstItem="REY-82-ZHc" firstAttribute="top" secondItem="hGe-OH-ifG" secondAttribute="top" constant="25" id="iZd-p1-Rnp"/>
                             <constraint firstAttribute="bottom" secondItem="7Sr-33-MS5" secondAttribute="bottom" constant="10" id="k2e-bm-8AE"/>
                             <constraint firstItem="7Sr-33-MS5" firstAttribute="leading" secondItem="t2y-Ba-TTi" secondAttribute="leading" id="klQ-iC-Z9B"/>
                             <constraint firstItem="t2y-Ba-TTi" firstAttribute="leading" secondItem="REY-82-ZHc" secondAttribute="trailing" constant="10" id="sgh-tT-O94"/>
