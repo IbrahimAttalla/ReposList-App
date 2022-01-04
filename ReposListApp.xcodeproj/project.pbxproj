@@ -77,6 +77,7 @@
 		CEA508DF27820A1F00B358BD /* ReposListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA508DD27820A1F00B358BD /* ReposListVC.swift */; };
 		CEA508E027820A1F00B358BD /* ReposListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA508DE27820A1F00B358BD /* ReposListVC.xib */; };
 		CEE701DE27849A4000692B67 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEE701DD27849A4000692B67 /* Colors.xcassets */; };
+		CEE701F62784B3E600692B67 /* Array+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE701F52784B3E600692B67 /* Array+extension.swift */; };
 		CEE9EF352784673B0095E11F /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE9EF342784673B0095E11F /* Repo.swift */; };
 		CEE9EF3A278467580095E11F /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE9EF39278467580095E11F /* Owner.swift */; };
 		CEE9EF40278468E60095E11F /* RepoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE9EF3E278468E60095E11F /* RepoCell.swift */; };
@@ -182,6 +183,7 @@
 		CEA508DD27820A1F00B358BD /* ReposListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposListVC.swift; sourceTree = "<group>"; };
 		CEA508DE27820A1F00B358BD /* ReposListVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReposListVC.xib; sourceTree = "<group>"; };
 		CEE701DD27849A4000692B67 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		CEE701F52784B3E600692B67 /* Array+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+extension.swift"; sourceTree = "<group>"; };
 		CEE9EF342784673B0095E11F /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
 		CEE9EF39278467580095E11F /* Owner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
 		CEE9EF3E278468E60095E11F /* RepoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoCell.swift; sourceTree = "<group>"; };
@@ -287,6 +289,7 @@
 		CE914EFE278378EA00B743E2 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				CEE701F42784B3BB00692B67 /* MoreUIKitExtension */,
 				CE914F292783791400B743E2 /* Font */,
 				CE914F6A2783791D00B743E2 /* Base */,
 				CE914EFF2783790600B743E2 /* UI */,
@@ -486,6 +489,14 @@
 			children = (
 			);
 			path = RepoDetailsView;
+			sourceTree = "<group>";
+		};
+		CEE701F42784B3BB00692B67 /* MoreUIKitExtension */ = {
+			isa = PBXGroup;
+			children = (
+				CEE701F52784B3E600692B67 /* Array+extension.swift */,
+			);
+			path = MoreUIKitExtension;
 			sourceTree = "<group>";
 		};
 		CEE9EF26278466EF0095E11F /* Model */ = {
@@ -793,6 +804,7 @@
 				CEE9EF352784673B0095E11F /* Repo.swift in Sources */,
 				CE914EC42783354600B743E2 /* Result.swift in Sources */,
 				CE914F772783791D00B743E2 /* BaseViewController.swift in Sources */,
+				CEE701F62784B3E600692B67 /* Array+extension.swift in Sources */,
 				CE914EBF2783352500B743E2 /* ServiceError.swift in Sources */,
 				CE914EB6278325F700B743E2 /* Reachability.swift in Sources */,
 				CEA508DF27820A1F00B358BD /* ReposListVC.swift in Sources */,

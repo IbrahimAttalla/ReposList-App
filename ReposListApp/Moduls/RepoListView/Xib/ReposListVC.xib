@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -12,6 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReposListVC" customModule="ReposListApp" customModuleProvider="target">
             <connections>
                 <outlet property="reposListTV" destination="xo7-2M-YpH" id="fIi-ii-3zI"/>
+                <outlet property="searchQuary" destination="OHB-Q3-B9h" id="Ljj-LO-lkn"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -21,25 +23,55 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xo7-2M-YpH">
-                    <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                    <rect key="frame" x="0.0" y="114" width="414" height="782"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
                     </userDefinedRuntimeAttributes>
                 </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HmP-ke-LPL">
+                    <rect key="frame" x="0.0" y="44" width="414" height="70"/>
+                    <subviews>
+                        <searchBar contentMode="redraw" barStyle="blackTranslucent" translucent="NO" backgroundImage="aaaa" translatesAutoresizingMaskIntoConstraints="NO" id="OHB-Q3-B9h">
+                            <rect key="frame" x="10" y="4" width="394" height="56"/>
+                            <color key="backgroundColor" name="AppMainColor"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                            <scopeButtonTitles>
+                                <string>Title</string>
+                                <string>Title</string>
+                            </scopeButtonTitles>
+                        </searchBar>
+                    </subviews>
+                    <color key="backgroundColor" name="AppMainColor"/>
+                    <constraints>
+                        <constraint firstItem="OHB-Q3-B9h" firstAttribute="leading" secondItem="HmP-ke-LPL" secondAttribute="leading" constant="10" id="3d7-DC-YpD"/>
+                        <constraint firstAttribute="height" constant="70" id="V1r-bn-sW2"/>
+                        <constraint firstAttribute="trailing" secondItem="OHB-Q3-B9h" secondAttribute="trailing" constant="10" id="X9w-PQ-3v0"/>
+                        <constraint firstAttribute="bottom" secondItem="OHB-Q3-B9h" secondAttribute="bottom" constant="10" id="r7q-jG-pDW"/>
+                    </constraints>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemYellowColor"/>
             <constraints>
+                <constraint firstItem="HmP-ke-LPL" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="2jf-eK-L3z"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xo7-2M-YpH" secondAttribute="trailing" id="H5t-Xk-R8p"/>
                 <constraint firstAttribute="bottom" secondItem="xo7-2M-YpH" secondAttribute="bottom" id="NxA-LF-UqB"/>
                 <constraint firstItem="xo7-2M-YpH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="QLV-UX-Azd"/>
-                <constraint firstItem="xo7-2M-YpH" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="WnZ-W4-X3b"/>
+                <constraint firstItem="HmP-ke-LPL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="SeD-y7-MJe"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="HmP-ke-LPL" secondAttribute="trailing" id="Vf9-kW-gg7"/>
+                <constraint firstItem="xo7-2M-YpH" firstAttribute="top" secondItem="HmP-ke-LPL" secondAttribute="bottom" id="qDi-wG-aZu"/>
             </constraints>
             <point key="canvasLocation" x="44.927536231884062" y="115.84821428571428"/>
         </view>
     </objects>
     <resources>
+        <image name="aaaa" width="16" height="16"/>
+        <namedColor name="AppMainColor">
+            <color red="0.21568627450980393" green="0.29803921568627451" blue="0.37647058823529411" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

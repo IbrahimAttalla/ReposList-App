@@ -12,7 +12,7 @@ import SVProgressHUD
 class ReposListVC: BaseViewController {
     
     @IBOutlet weak var reposListTV: UITableView!
-    
+    @IBOutlet weak var searchQuary: UISearchBar!
     lazy var vm: ReposListVM = {
         return ReposListVM()
     }()
@@ -29,7 +29,7 @@ class ReposListVC: BaseViewController {
     func initView(){
         
         self.navigationController?.navigationBar.isHidden = false
-
+        searchQuary.delegate = self
         reposListTV.delegate = self
         reposListTV.dataSource = self
         reposListTV.register(UINib(nibName: RepoCell.idAndNib, bundle: nil), forCellReuseIdentifier: RepoCell.idAndNib)
@@ -38,7 +38,7 @@ class ReposListVC: BaseViewController {
         reposListTV.rowHeight = UITableView.automaticDimension
         
         vm.fetchReposList()
-
+        hideKeyboardWhenTappedAround()
         
     }
     
@@ -55,7 +55,7 @@ class ReposListVC: BaseViewController {
                 }
             case false:
                 DispatchQueue.main.async {
-                  //  SVProgressHUD.dismiss()
+                    //  SVProgressHUD.dismiss()
                     self.reposListTV.stopSkeletonAnimation()
                     self.reposListTV.hideSkeleton()
                     //                    SVProgressHUD.setDefaultMaskType(.clear)
@@ -78,7 +78,7 @@ class ReposListVC: BaseViewController {
                     SVProgressHUD.show()
                     SVProgressHUD.setDefaultMaskType(.black)
                 }
-
+                
             }else{
                 DispatchQueue.main.async {
                     SVProgressHUD.dismiss()
@@ -105,7 +105,7 @@ class ReposListVC: BaseViewController {
         
         vm.reposList.bind { (list) in
             DispatchQueue.main.async {
-
+                
                 self.reposListTV.reloadData()
             }
         }
@@ -128,16 +128,16 @@ extension ReposListVC: UITableViewDelegate , UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return (vm.reposList.value?.count ?? 0) == 0 ? 3:vm.reposList.value?.count ?? 0
-     //   return vm.reposList.value?.count ?? 0
+        //   return vm.reposList.value?.count ?? 0
     }
     
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: RepoCell.idAndNib, for: indexPath) as! RepoCell
-       
+        
         if vm.reposList.value?.count ?? 0 != 0{
-        cell.configure(repo: vm.reposList.value![indexPath.row])
+            cell.configure(repo: vm.reposList.value![indexPath.row])
         }
         return cell
     }
@@ -148,13 +148,36 @@ extension ReposListVC: UITableViewDelegate , UITableViewDataSource{
     
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-                if tableView == reposListTV{
-        print("last index = ", indexPath.row)
-                    if indexPath.row == (vm.reposList.value!.count)-1 {
-                    vm.loadMoreData()
-                 }
-                }
+        if tableView == reposListTV{
+            print("last index = ", indexPath.row)
+            if indexPath.row == (vm.reposList.value!.count)-1 {
+                vm.loadMoreData()
             }
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let selectedRepo = vm.reposList.value?[indexPath.row] else { return }
+        print(selectedRepo.name)
+    }
+}
 
 
+extension ReposListVC: UISearchBarDelegate{
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searchQuary.endEditing(true)
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchQuary.endEditing(true)
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        print(searchText)
+        if searchText.count >= 2{
+            vm.search(with: searchText)
+        }else{
+            vm.resetRepsList()
+        }
+    }
 }

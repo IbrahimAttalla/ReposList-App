@@ -9,22 +9,25 @@ import Bond
 class ReposListVM:BaseViewModel{
     
     //MARK:- GateWay  & Passed Data---
+    
     let dataGateWay : DataServiceProtocol
     
     
     
     //MARK:- Observation  ----
+    
     var searchKey: Observable<String?> = Observable("")
     var reposList: Dynamic<[Repo]?> = Dynamic([])
     var showPaginationLoading : Dynamic<Bool> = Dynamic(false)
 
-    
     var baseReposList =  [Repo]()
     var chunckedList = [[Repo]]()
     var itemsParPage = 10
     var curruntPage = 0
     
+    
     //MARK:- DI ----
+    
     init( dataGateWay : DataServiceProtocol = DataGetway()) {
         self.dataGateWay = dataGateWay
     }
@@ -62,6 +65,10 @@ class ReposListVM:BaseViewModel{
     }
     
     
+    
+    
+    //MARK:- chunkReturnedList   ---
+    
     func chunkReturnedList(list:[Repo]){
             chunckedList = list.chunked(into: itemsParPage)
             if !chunckedList.isEmpty {
@@ -70,6 +77,10 @@ class ReposListVM:BaseViewModel{
 
     }
     
+    
+    
+    //MARK:- chunkReturnedList   ---
+
     func loadMoreData(){
         let nextPage = curruntPage+1
         if nextPage <= (chunckedList.count-1){
@@ -84,12 +95,26 @@ class ReposListVM:BaseViewModel{
     }
     
     
-}
+    func search(with text :String){
+        let searchResult  = baseReposList.filter{$0.name!.lowercased().contains(text.lowercased())}
 
-extension Array {
-    func chunked(into size: Int) -> [[Element]] {
-        return stride(from: 0, to: count, by: size).map {
-            Array(self[$0 ..< Swift.min($0 + size, count)])
+        print("text = ",text)
+        print("baseResult = ", baseReposList.count)
+        print("searchResult = ", searchResult.count)
+        if !(searchResult.isEmpty) {
+            reposList.value?.removeAll()
+            reposList.value = searchResult
         }
     }
+    
+    
+    func resetRepsList(){
+        reposList.value?.removeAll()
+        if !chunckedList.isEmpty {
+            self.reposList.value?.append(contentsOf:chunckedList.first!)
+        }
+
+    }
+    
 }
+

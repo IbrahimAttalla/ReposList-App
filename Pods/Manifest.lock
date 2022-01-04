@@ -5,6 +5,7 @@ PODS:
     - ReactiveKit (~> 3.14)
   - Differ (1.4.5)
   - EMAlertController (1.0.2)
+  - IQKeyboardManagerSwift (6.3.0)
   - ReactiveKit (3.17.4)
   - SkeletonView (1.26.0)
   - SVProgressHUD (2.2.5)
@@ -14,6 +15,7 @@ DEPENDENCIES:
   - ANZSingleImageViewer
   - Bond (~> 7.6.0)
   - EMAlertController
+  - IQKeyboardManagerSwift (= 6.3.0)
   - SkeletonView
   - SVProgressHUD
   - Toast (~> 3.1.0)
@@ -24,6 +26,7 @@ SPEC REPOS:
     - Bond
     - Differ
     - EMAlertController
+    - IQKeyboardManagerSwift
     - ReactiveKit
     - SkeletonView
     - SVProgressHUD
@@ -34,11 +37,12 @@ SPEC CHECKSUMS:
   Bond: 9e7d901cf4ed825b6004a93dd0a7f1c7479e2834
   Differ: 3b6bd78e2b20cc795d9a86f7641d087524e4273e
   EMAlertController: 471e4630309e5ae843ef71f502d6b58525b22c60
+  IQKeyboardManagerSwift: a8228c257614af98743b4cd8584637025f36358f
   ReactiveKit: f9f9e079efa39312c597bf1508ef4810d111ce76
   SkeletonView: 6b62a8ddbc64abb113ea3243e4a9979e5750f147
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   Toast: 14a93686d6c8bfe2727afd342414e35660a8a1f3
 
-PODFILE CHECKSUM: 7c7ff9fe52d697bc67384141ab73ce228ff51864
+PODFILE CHECKSUM: 05c2d9975e90622c3607c9ca9cb22b163e841aa3
 
 COCOAPODS: 1.10.1

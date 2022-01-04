@@ -13,7 +13,8 @@ target 'ReposListApp' do
   pod 'ANZSingleImageViewer'
   pod 'Toast', '~> 3.1.0'
   pod 'SVProgressHUD'
-  pod  
+  pod 'IQKeyboardManagerSwift', '6.3.0'
+
 
   # Pods for ReposListApp
 
