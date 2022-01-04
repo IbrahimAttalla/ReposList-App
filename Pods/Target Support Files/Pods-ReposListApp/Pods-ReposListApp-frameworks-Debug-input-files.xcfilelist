@@ -1,0 +1,9 @@
+${PODS_ROOT}/Target Support Files/Pods-ReposListApp/Pods-ReposListApp-frameworks.sh
+${BUILT_PRODUCTS_DIR}/ANZSingleImageViewer/ANZSingleImageViewer.framework
+${BUILT_PRODUCTS_DIR}/Bond/Bond.framework
+${BUILT_PRODUCTS_DIR}/Differ/Differ.framework
+${BUILT_PRODUCTS_DIR}/EMAlertController/EMAlertController.framework
+${BUILT_PRODUCTS_DIR}/ReactiveKit/ReactiveKit.framework
+${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework
+${BUILT_PRODUCTS_DIR}/SkeletonView/SkeletonView.framework
+${BUILT_PRODUCTS_DIR}/Toast/Toast.framework

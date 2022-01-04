@@ -9,7 +9,7 @@ import Foundation
 
 
 
-protocol APIDataServiceProtocol {
+protocol DataServiceProtocol {
     func fetchReposList( completion: @escaping (_ responce: Result<[Bool], ServiceError> ) -> () )
 }
 
@@ -19,7 +19,7 @@ protocol APIDataServiceProtocol {
 
 // MARK:- DataGetway class
 
-class DataGetway: APIDataServiceProtocol {
+class DataGetway: DataServiceProtocol {
     
     let apiClient: APIClient
     init(apiClient: APIClient = APIClientImp()) { self.apiClient = apiClient }

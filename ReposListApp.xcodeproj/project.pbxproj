@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B1242D3F9898D67C934B31E /* Pods_ReposListApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D825DEE5DFC2F842780243EA /* Pods_ReposListApp.framework */; };
+		73839994636D6CB23704239C /* Pods_ReposListAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 992A7952BAC4ECC70F73BD80 /* Pods_ReposListAppTests.framework */; };
 		CE914EA227831EEA00B743E2 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE914EA027831EEA00B743E2 /* Config.swift */; };
 		CE914EA327831EEA00B743E2 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE914EA127831EEA00B743E2 /* Config.plist */; };
 		CE914EAF278324CC00B743E2 /* LoadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE914EAC278324CC00B743E2 /* LoadImage.swift */; };
@@ -16,6 +18,56 @@
 		CE914EBF2783352500B743E2 /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE914EBE2783352500B743E2 /* ServiceError.swift */; };
 		CE914EC42783354600B743E2 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE914EC32783354600B743E2 /* Result.swift */; };
 		CE914EC92783480200B743E2 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE914EC82783480200B743E2 /* ApiClient.swift */; };
+		CE914F132783790600B743E2 /* String + height.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE914F002783790600B743E2 /* String + height.swift */; };
+		CE914F142783790600B743E2 /* ViewDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE914F012783790600B743E2 /* ViewDesignable.swift */; };
+		CE914F152783790600B743E2 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE914F022783790600B743E2 /* UIColor+Hex.swift */; };
+		CE914F162783790600B743E2 /* UIColor + theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE914F032783790600B743E2 /* UIColor + theme.swift */; };
+		CE914F172783790600B743E2 /* UIView + Constranies.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE914F042783790600B743E2 /* UIView + Constranies.swift */; };
+		CE914F182783790600B743E2 /* UIview+shimmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE914F052783790600B743E2 /* UIview+shimmer.swift */; };
+		CE914F1A2783790600B743E2 /* DashedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE914F072783790600B743E2 /* DashedView.swift */; };
+		CE914F1B2783790600B743E2 /* TextField-color-Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE914F082783790600B743E2 /* TextField-color-Extention.swift */; };
+		CE914F1C2783790600B743E2 /* UIButton-UILable + Underline.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE914F092783790600B743E2 /* UIButton-UILable + Underline.swift */; };
+		CE914F1D2783790600B743E2 /* gradientLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE914F0A2783790600B743E2 /* gradientLabel.swift */; };
+		CE914F1E2783790600B743E2 /* UIView+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE914F0B2783790600B743E2 /* UIView+Border.swift */; };
+		CE914F1F2783790600B743E2 /* UIView+SomeCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE914F0C2783790600B743E2 /* UIView+SomeCorner.swift */; };
+		CE914F202783790600B743E2 /* AnimatedMaskLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE914F0D2783790600B743E2 /* AnimatedMaskLabel.swift */; };
+		CE914F222783790600B743E2 /* UIview+GradiantColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE914F0F2783790600B743E2 /* UIview+GradiantColor.swift */; };
+		CE914F232783790600B743E2 /* Double + RoundToPrecentage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE914F102783790600B743E2 /* Double + RoundToPrecentage.swift */; };
+		CE914F4A2783791400B743E2 /* Midnight_Drive_Two.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE914F2A2783791400B743E2 /* Midnight_Drive_Two.otf */; };
+		CE914F4B2783791400B743E2 /* ExtentionsForFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE914F2B2783791400B743E2 /* ExtentionsForFont.swift */; };
+		CE914F4C2783791400B743E2 /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE914F2D2783791400B743E2 /* OpenSans-SemiBold.ttf */; };
+		CE914F4D2783791400B743E2 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE914F2E2783791400B743E2 /* OpenSans-Light.ttf */; };
+		CE914F4E2783791400B743E2 /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE914F2F2783791400B743E2 /* OpenSans-Italic.ttf */; };
+		CE914F4F2783791400B743E2 /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE914F302783791400B743E2 /* OpenSans-ExtraBold.ttf */; };
+		CE914F502783791400B743E2 /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE914F312783791400B743E2 /* OpenSans-LightItalic.ttf */; };
+		CE914F512783791400B743E2 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE914F322783791400B743E2 /* OpenSans-Bold.ttf */; };
+		CE914F522783791400B743E2 /* OpenSans-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE914F332783791400B743E2 /* OpenSans-SemiBoldItalic.ttf */; };
+		CE914F532783791400B743E2 /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE914F342783791400B743E2 /* OpenSans-ExtraBoldItalic.ttf */; };
+		CE914F542783791400B743E2 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE914F352783791400B743E2 /* LICENSE.txt */; };
+		CE914F552783791400B743E2 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE914F362783791400B743E2 /* OpenSans-Regular.ttf */; };
+		CE914F562783791400B743E2 /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE914F372783791400B743E2 /* OpenSans-BoldItalic.ttf */; };
+		CE914F572783791400B743E2 /* ArbFONTS-Tajawal-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE914F392783791400B743E2 /* ArbFONTS-Tajawal-Regular.ttf */; };
+		CE914F582783791400B743E2 /* ArbFONTS-Tajawal-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE914F3A2783791400B743E2 /* ArbFONTS-Tajawal-ExtraLight.ttf */; };
+		CE914F592783791400B743E2 /* ArbFONTS-Tajawal-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE914F3B2783791400B743E2 /* ArbFONTS-Tajawal-ExtraBold.ttf */; };
+		CE914F5A2783791400B743E2 /* ArbFONTS-Tajawal-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE914F3C2783791400B743E2 /* ArbFONTS-Tajawal-Bold.ttf */; };
+		CE914F5B2783791400B743E2 /* ArbFONTS-Tajawal-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE914F3D2783791400B743E2 /* ArbFONTS-Tajawal-Light.ttf */; };
+		CE914F5C2783791400B743E2 /* ArbFONTS-Tajawal-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE914F3E2783791400B743E2 /* ArbFONTS-Tajawal-Black.ttf */; };
+		CE914F5D2783791400B743E2 /* ArbFONTS-Tajawal-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE914F3F2783791400B743E2 /* ArbFONTS-Tajawal-Medium.ttf */; };
+		CE914F5E2783791400B743E2 /* SFPRODISPLAYSEMIBOLDITALIC.OTF in Resources */ = {isa = PBXBuildFile; fileRef = CE914F412783791400B743E2 /* SFPRODISPLAYSEMIBOLDITALIC.OTF */; };
+		CE914F5F2783791400B743E2 /* SFPRODISPLAYHEAVYITALIC.OTF in Resources */ = {isa = PBXBuildFile; fileRef = CE914F422783791400B743E2 /* SFPRODISPLAYHEAVYITALIC.OTF */; };
+		CE914F602783791400B743E2 /* SFPRODISPLAYLIGHTITALIC.OTF in Resources */ = {isa = PBXBuildFile; fileRef = CE914F432783791400B743E2 /* SFPRODISPLAYLIGHTITALIC.OTF */; };
+		CE914F612783791400B743E2 /* SFPRODISPLAYBLACKITALIC.OTF in Resources */ = {isa = PBXBuildFile; fileRef = CE914F442783791400B743E2 /* SFPRODISPLAYBLACKITALIC.OTF */; };
+		CE914F622783791400B743E2 /* SFPRODISPLAYREGULAR.OTF in Resources */ = {isa = PBXBuildFile; fileRef = CE914F452783791400B743E2 /* SFPRODISPLAYREGULAR.OTF */; };
+		CE914F632783791400B743E2 /* SFPRODISPLAYTHINITALIC.OTF in Resources */ = {isa = PBXBuildFile; fileRef = CE914F462783791400B743E2 /* SFPRODISPLAYTHINITALIC.OTF */; };
+		CE914F642783791400B743E2 /* SFPRODISPLAYBOLD.OTF in Resources */ = {isa = PBXBuildFile; fileRef = CE914F472783791400B743E2 /* SFPRODISPLAYBOLD.OTF */; };
+		CE914F652783791400B743E2 /* SFPRODISPLAYMEDIUM.OTF in Resources */ = {isa = PBXBuildFile; fileRef = CE914F482783791400B743E2 /* SFPRODISPLAYMEDIUM.OTF */; };
+		CE914F662783791400B743E2 /* SFPRODISPLAYULTRALIGHTITALIC.OTF in Resources */ = {isa = PBXBuildFile; fileRef = CE914F492783791400B743E2 /* SFPRODISPLAYULTRALIGHTITALIC.OTF */; };
+		CE914F752783791D00B743E2 /* UIViewController+Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE914F6C2783791D00B743E2 /* UIViewController+Route.swift */; };
+		CE914F762783791D00B743E2 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE914F6D2783791D00B743E2 /* Route.swift */; };
+		CE914F772783791D00B743E2 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE914F6E2783791D00B743E2 /* BaseViewController.swift */; };
+		CE914F792783791D00B743E2 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE914F712783791D00B743E2 /* Dynamic.swift */; };
+		CE914F7A2783791D00B743E2 /* BaseVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE914F722783791D00B743E2 /* BaseVM.swift */; };
+		CE914F9627837A9C00B743E2 /* ReposListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE914F9527837A9C00B743E2 /* ReposListVM.swift */; };
 		CEA5089C278207EF00B358BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5089B278207EF00B358BD /* AppDelegate.swift */; };
 		CEA508A3278207EF00B358BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA508A1278207EF00B358BD /* Main.storyboard */; };
 		CEA508A5278207F000B358BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA508A4278207F000B358BD /* Assets.xcassets */; };
@@ -24,6 +76,7 @@
 		CEA508BE278207F000B358BD /* ReposListAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA508BD278207F000B358BD /* ReposListAppUITests.swift */; };
 		CEA508DF27820A1F00B358BD /* ReposListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA508DD27820A1F00B358BD /* ReposListVC.swift */; };
 		CEA508E027820A1F00B358BD /* ReposListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA508DE27820A1F00B358BD /* ReposListVC.xib */; };
+		D010B2A261AAF1593F7A3CF6 /* Pods_ReposListApp_ReposListAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D22F8C5F17EA74573994F395 /* Pods_ReposListApp_ReposListAppUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +97,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D090865C600EAB001193F08 /* Pods-ReposListApp-ReposListAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReposListApp-ReposListAppUITests.release.xcconfig"; path = "Target Support Files/Pods-ReposListApp-ReposListAppUITests/Pods-ReposListApp-ReposListAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2A086D2479D95EF595B329FF /* Pods-ReposListApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReposListApp.release.xcconfig"; path = "Target Support Files/Pods-ReposListApp/Pods-ReposListApp.release.xcconfig"; sourceTree = "<group>"; };
+		3EC4B7FA0A5946B9C5077ECD /* Pods-ReposListAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReposListAppTests.debug.xcconfig"; path = "Target Support Files/Pods-ReposListAppTests/Pods-ReposListAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		86015F1AEA61A4D2D8FC99BA /* Pods-ReposListApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReposListApp.debug.xcconfig"; path = "Target Support Files/Pods-ReposListApp/Pods-ReposListApp.debug.xcconfig"; sourceTree = "<group>"; };
+		992A7952BAC4ECC70F73BD80 /* Pods_ReposListAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReposListAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBC51B09F8D56EF3BD9C6897 /* Pods-ReposListAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReposListAppTests.release.xcconfig"; path = "Target Support Files/Pods-ReposListAppTests/Pods-ReposListAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		CE914EA027831EEA00B743E2 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		CE914EA127831EEA00B743E2 /* Config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
 		CE914EAC278324CC00B743E2 /* LoadImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadImage.swift; sourceTree = "<group>"; };
@@ -53,6 +112,56 @@
 		CE914EBE2783352500B743E2 /* ServiceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
 		CE914EC32783354600B743E2 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		CE914EC82783480200B743E2 /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		CE914F002783790600B743E2 /* String + height.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String + height.swift"; sourceTree = "<group>"; };
+		CE914F012783790600B743E2 /* ViewDesignable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewDesignable.swift; sourceTree = "<group>"; };
+		CE914F022783790600B743E2 /* UIColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		CE914F032783790600B743E2 /* UIColor + theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor + theme.swift"; sourceTree = "<group>"; };
+		CE914F042783790600B743E2 /* UIView + Constranies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView + Constranies.swift"; sourceTree = "<group>"; };
+		CE914F052783790600B743E2 /* UIview+shimmer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIview+shimmer.swift"; sourceTree = "<group>"; };
+		CE914F072783790600B743E2 /* DashedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashedView.swift; sourceTree = "<group>"; };
+		CE914F082783790600B743E2 /* TextField-color-Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TextField-color-Extention.swift"; sourceTree = "<group>"; };
+		CE914F092783790600B743E2 /* UIButton-UILable + Underline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton-UILable + Underline.swift"; sourceTree = "<group>"; };
+		CE914F0A2783790600B743E2 /* gradientLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = gradientLabel.swift; sourceTree = "<group>"; };
+		CE914F0B2783790600B743E2 /* UIView+Border.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Border.swift"; sourceTree = "<group>"; };
+		CE914F0C2783790600B743E2 /* UIView+SomeCorner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+SomeCorner.swift"; sourceTree = "<group>"; };
+		CE914F0D2783790600B743E2 /* AnimatedMaskLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedMaskLabel.swift; sourceTree = "<group>"; };
+		CE914F0F2783790600B743E2 /* UIview+GradiantColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIview+GradiantColor.swift"; sourceTree = "<group>"; };
+		CE914F102783790600B743E2 /* Double + RoundToPrecentage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double + RoundToPrecentage.swift"; sourceTree = "<group>"; };
+		CE914F2A2783791400B743E2 /* Midnight_Drive_Two.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Midnight_Drive_Two.otf; sourceTree = "<group>"; };
+		CE914F2B2783791400B743E2 /* ExtentionsForFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtentionsForFont.swift; sourceTree = "<group>"; };
+		CE914F2D2783791400B743E2 /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		CE914F2E2783791400B743E2 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		CE914F2F2783791400B743E2 /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic.ttf"; sourceTree = "<group>"; };
+		CE914F302783791400B743E2 /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		CE914F312783791400B743E2 /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		CE914F322783791400B743E2 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		CE914F332783791400B743E2 /* OpenSans-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		CE914F342783791400B743E2 /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		CE914F352783791400B743E2 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		CE914F362783791400B743E2 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		CE914F372783791400B743E2 /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		CE914F392783791400B743E2 /* ArbFONTS-Tajawal-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ArbFONTS-Tajawal-Regular.ttf"; sourceTree = "<group>"; };
+		CE914F3A2783791400B743E2 /* ArbFONTS-Tajawal-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ArbFONTS-Tajawal-ExtraLight.ttf"; sourceTree = "<group>"; };
+		CE914F3B2783791400B743E2 /* ArbFONTS-Tajawal-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ArbFONTS-Tajawal-ExtraBold.ttf"; sourceTree = "<group>"; };
+		CE914F3C2783791400B743E2 /* ArbFONTS-Tajawal-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ArbFONTS-Tajawal-Bold.ttf"; sourceTree = "<group>"; };
+		CE914F3D2783791400B743E2 /* ArbFONTS-Tajawal-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ArbFONTS-Tajawal-Light.ttf"; sourceTree = "<group>"; };
+		CE914F3E2783791400B743E2 /* ArbFONTS-Tajawal-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ArbFONTS-Tajawal-Black.ttf"; sourceTree = "<group>"; };
+		CE914F3F2783791400B743E2 /* ArbFONTS-Tajawal-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ArbFONTS-Tajawal-Medium.ttf"; sourceTree = "<group>"; };
+		CE914F412783791400B743E2 /* SFPRODISPLAYSEMIBOLDITALIC.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYSEMIBOLDITALIC.OTF; sourceTree = "<group>"; };
+		CE914F422783791400B743E2 /* SFPRODISPLAYHEAVYITALIC.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYHEAVYITALIC.OTF; sourceTree = "<group>"; };
+		CE914F432783791400B743E2 /* SFPRODISPLAYLIGHTITALIC.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYLIGHTITALIC.OTF; sourceTree = "<group>"; };
+		CE914F442783791400B743E2 /* SFPRODISPLAYBLACKITALIC.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYBLACKITALIC.OTF; sourceTree = "<group>"; };
+		CE914F452783791400B743E2 /* SFPRODISPLAYREGULAR.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYREGULAR.OTF; sourceTree = "<group>"; };
+		CE914F462783791400B743E2 /* SFPRODISPLAYTHINITALIC.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYTHINITALIC.OTF; sourceTree = "<group>"; };
+		CE914F472783791400B743E2 /* SFPRODISPLAYBOLD.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYBOLD.OTF; sourceTree = "<group>"; };
+		CE914F482783791400B743E2 /* SFPRODISPLAYMEDIUM.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYMEDIUM.OTF; sourceTree = "<group>"; };
+		CE914F492783791400B743E2 /* SFPRODISPLAYULTRALIGHTITALIC.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYULTRALIGHTITALIC.OTF; sourceTree = "<group>"; };
+		CE914F6C2783791D00B743E2 /* UIViewController+Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Route.swift"; sourceTree = "<group>"; };
+		CE914F6D2783791D00B743E2 /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		CE914F6E2783791D00B743E2 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		CE914F712783791D00B743E2 /* Dynamic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
+		CE914F722783791D00B743E2 /* BaseVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseVM.swift; sourceTree = "<group>"; };
+		CE914F9527837A9C00B743E2 /* ReposListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposListVM.swift; sourceTree = "<group>"; };
 		CEA50898278207EF00B358BD /* ReposListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReposListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA5089B278207EF00B358BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEA508A2278207EF00B358BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -67,6 +176,9 @@
 		CEA508BF278207F100B358BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEA508DD27820A1F00B358BD /* ReposListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposListVC.swift; sourceTree = "<group>"; };
 		CEA508DE27820A1F00B358BD /* ReposListVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReposListVC.xib; sourceTree = "<group>"; };
+		D22F8C5F17EA74573994F395 /* Pods_ReposListApp_ReposListAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReposListApp_ReposListAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D505AD6BFE24C9FE7F3063BB /* Pods-ReposListApp-ReposListAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReposListApp-ReposListAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-ReposListApp-ReposListAppUITests/Pods-ReposListApp-ReposListAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D825DEE5DFC2F842780243EA /* Pods_ReposListApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReposListApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +186,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B1242D3F9898D67C934B31E /* Pods_ReposListApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +194,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73839994636D6CB23704239C /* Pods_ReposListAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +202,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D010B2A261AAF1593F7A3CF6 /* Pods_ReposListApp_ReposListAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +271,126 @@
 			path = Xib;
 			sourceTree = "<group>";
 		};
+		CE914EFE278378EA00B743E2 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				CE914F292783791400B743E2 /* Font */,
+				CE914F6A2783791D00B743E2 /* Base */,
+				CE914EFF2783790600B743E2 /* UI */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		CE914EFF2783790600B743E2 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				CE914F002783790600B743E2 /* String + height.swift */,
+				CE914F012783790600B743E2 /* ViewDesignable.swift */,
+				CE914F022783790600B743E2 /* UIColor+Hex.swift */,
+				CE914F032783790600B743E2 /* UIColor + theme.swift */,
+				CE914F042783790600B743E2 /* UIView + Constranies.swift */,
+				CE914F052783790600B743E2 /* UIview+shimmer.swift */,
+				CE914F072783790600B743E2 /* DashedView.swift */,
+				CE914F082783790600B743E2 /* TextField-color-Extention.swift */,
+				CE914F092783790600B743E2 /* UIButton-UILable + Underline.swift */,
+				CE914F0A2783790600B743E2 /* gradientLabel.swift */,
+				CE914F0B2783790600B743E2 /* UIView+Border.swift */,
+				CE914F0C2783790600B743E2 /* UIView+SomeCorner.swift */,
+				CE914F0D2783790600B743E2 /* AnimatedMaskLabel.swift */,
+				CE914F0F2783790600B743E2 /* UIview+GradiantColor.swift */,
+				CE914F102783790600B743E2 /* Double + RoundToPrecentage.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		CE914F292783791400B743E2 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				CE914F2A2783791400B743E2 /* Midnight_Drive_Two.otf */,
+				CE914F2B2783791400B743E2 /* ExtentionsForFont.swift */,
+				CE914F2C2783791400B743E2 /* Open_Sans */,
+				CE914F382783791400B743E2 /* Tajawal */,
+				CE914F402783791400B743E2 /* sf-pro-display-cufonfonts */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		CE914F2C2783791400B743E2 /* Open_Sans */ = {
+			isa = PBXGroup;
+			children = (
+				CE914F2D2783791400B743E2 /* OpenSans-SemiBold.ttf */,
+				CE914F2E2783791400B743E2 /* OpenSans-Light.ttf */,
+				CE914F2F2783791400B743E2 /* OpenSans-Italic.ttf */,
+				CE914F302783791400B743E2 /* OpenSans-ExtraBold.ttf */,
+				CE914F312783791400B743E2 /* OpenSans-LightItalic.ttf */,
+				CE914F322783791400B743E2 /* OpenSans-Bold.ttf */,
+				CE914F332783791400B743E2 /* OpenSans-SemiBoldItalic.ttf */,
+				CE914F342783791400B743E2 /* OpenSans-ExtraBoldItalic.ttf */,
+				CE914F352783791400B743E2 /* LICENSE.txt */,
+				CE914F362783791400B743E2 /* OpenSans-Regular.ttf */,
+				CE914F372783791400B743E2 /* OpenSans-BoldItalic.ttf */,
+			);
+			path = Open_Sans;
+			sourceTree = "<group>";
+		};
+		CE914F382783791400B743E2 /* Tajawal */ = {
+			isa = PBXGroup;
+			children = (
+				CE914F392783791400B743E2 /* ArbFONTS-Tajawal-Regular.ttf */,
+				CE914F3A2783791400B743E2 /* ArbFONTS-Tajawal-ExtraLight.ttf */,
+				CE914F3B2783791400B743E2 /* ArbFONTS-Tajawal-ExtraBold.ttf */,
+				CE914F3C2783791400B743E2 /* ArbFONTS-Tajawal-Bold.ttf */,
+				CE914F3D2783791400B743E2 /* ArbFONTS-Tajawal-Light.ttf */,
+				CE914F3E2783791400B743E2 /* ArbFONTS-Tajawal-Black.ttf */,
+				CE914F3F2783791400B743E2 /* ArbFONTS-Tajawal-Medium.ttf */,
+			);
+			path = Tajawal;
+			sourceTree = "<group>";
+		};
+		CE914F402783791400B743E2 /* sf-pro-display-cufonfonts */ = {
+			isa = PBXGroup;
+			children = (
+				CE914F412783791400B743E2 /* SFPRODISPLAYSEMIBOLDITALIC.OTF */,
+				CE914F422783791400B743E2 /* SFPRODISPLAYHEAVYITALIC.OTF */,
+				CE914F432783791400B743E2 /* SFPRODISPLAYLIGHTITALIC.OTF */,
+				CE914F442783791400B743E2 /* SFPRODISPLAYBLACKITALIC.OTF */,
+				CE914F452783791400B743E2 /* SFPRODISPLAYREGULAR.OTF */,
+				CE914F462783791400B743E2 /* SFPRODISPLAYTHINITALIC.OTF */,
+				CE914F472783791400B743E2 /* SFPRODISPLAYBOLD.OTF */,
+				CE914F482783791400B743E2 /* SFPRODISPLAYMEDIUM.OTF */,
+				CE914F492783791400B743E2 /* SFPRODISPLAYULTRALIGHTITALIC.OTF */,
+			);
+			path = "sf-pro-display-cufonfonts";
+			sourceTree = "<group>";
+		};
+		CE914F6A2783791D00B743E2 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				CE914F6B2783791D00B743E2 /* RouteSystem */,
+				CE914F6E2783791D00B743E2 /* BaseViewController.swift */,
+				CE914F6F2783791D00B743E2 /* BaseVM */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		CE914F6B2783791D00B743E2 /* RouteSystem */ = {
+			isa = PBXGroup;
+			children = (
+				CE914F6C2783791D00B743E2 /* UIViewController+Route.swift */,
+				CE914F6D2783791D00B743E2 /* Route.swift */,
+			);
+			path = RouteSystem;
+			sourceTree = "<group>";
+		};
+		CE914F6F2783791D00B743E2 /* BaseVM */ = {
+			isa = PBXGroup;
+			children = (
+				CE914F712783791D00B743E2 /* Dynamic.swift */,
+				CE914F722783791D00B743E2 /* BaseVM.swift */,
+			);
+			path = BaseVM;
+			sourceTree = "<group>";
+		};
 		CEA5088F278207EF00B358BD = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +398,8 @@
 				CEA508B1278207F000B358BD /* ReposListAppTests */,
 				CEA508BC278207F000B358BD /* ReposListAppUITests */,
 				CEA50899278207EF00B358BD /* Products */,
+				FB64840441C4B4B81848765E /* Pods */,
+				ED56F71996E2FE10E03F974E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -180,6 +417,7 @@
 			isa = PBXGroup;
 			children = (
 				CE914E9F27831EEA00B743E2 /* Config */,
+				CE914EFE278378EA00B743E2 /* Utilities */,
 				CE914E8E27831B8300B743E2 /* Services */,
 				CEA508DA278209B000B358BD /* Moduls */,
 				CE914E8D27831B4F00B743E2 /* SupportFiles */,
@@ -224,6 +462,7 @@
 			children = (
 				CE914EED278373DE00B743E2 /* Xib */,
 				CEA508DD27820A1F00B358BD /* ReposListVC.swift */,
+				CE914F9527837A9C00B743E2 /* ReposListVM.swift */,
 			);
 			path = RepoListView;
 			sourceTree = "<group>";
@@ -235,6 +474,29 @@
 			path = RepoDetailsView;
 			sourceTree = "<group>";
 		};
+		ED56F71996E2FE10E03F974E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D825DEE5DFC2F842780243EA /* Pods_ReposListApp.framework */,
+				D22F8C5F17EA74573994F395 /* Pods_ReposListApp_ReposListAppUITests.framework */,
+				992A7952BAC4ECC70F73BD80 /* Pods_ReposListAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB64840441C4B4B81848765E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				86015F1AEA61A4D2D8FC99BA /* Pods-ReposListApp.debug.xcconfig */,
+				2A086D2479D95EF595B329FF /* Pods-ReposListApp.release.xcconfig */,
+				D505AD6BFE24C9FE7F3063BB /* Pods-ReposListApp-ReposListAppUITests.debug.xcconfig */,
+				0D090865C600EAB001193F08 /* Pods-ReposListApp-ReposListAppUITests.release.xcconfig */,
+				3EC4B7FA0A5946B9C5077ECD /* Pods-ReposListAppTests.debug.xcconfig */,
+				BBC51B09F8D56EF3BD9C6897 /* Pods-ReposListAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -242,9 +504,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEA508C2278207F100B358BD /* Build configuration list for PBXNativeTarget "ReposListApp" */;
 			buildPhases = (
+				D0FF818253DED292CA81E91E /* [CP] Check Pods Manifest.lock */,
 				CEA50894278207EF00B358BD /* Sources */,
 				CEA50895278207EF00B358BD /* Frameworks */,
 				CEA50896278207EF00B358BD /* Resources */,
+				FD2E50CF7BA75022DE255B0E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -259,6 +523,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEA508C5278207F100B358BD /* Build configuration list for PBXNativeTarget "ReposListAppTests" */;
 			buildPhases = (
+				57DE9CF4C30D60F107A41B78 /* [CP] Check Pods Manifest.lock */,
 				CEA508AA278207F000B358BD /* Sources */,
 				CEA508AB278207F000B358BD /* Frameworks */,
 				CEA508AC278207F000B358BD /* Resources */,
@@ -277,9 +542,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEA508C8278207F100B358BD /* Build configuration list for PBXNativeTarget "ReposListAppUITests" */;
 			buildPhases = (
+				E68AAA222CFEAED4DBDE733B /* [CP] Check Pods Manifest.lock */,
 				CEA508B5278207F000B358BD /* Sources */,
 				CEA508B6278207F000B358BD /* Frameworks */,
 				CEA508B7278207F000B358BD /* Resources */,
+				29980891CADC66099B16B8AE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -338,11 +605,39 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE914F4E2783791400B743E2 /* OpenSans-Italic.ttf in Resources */,
+				CE914F612783791400B743E2 /* SFPRODISPLAYBLACKITALIC.OTF in Resources */,
+				CE914F582783791400B743E2 /* ArbFONTS-Tajawal-ExtraLight.ttf in Resources */,
+				CE914F532783791400B743E2 /* OpenSans-ExtraBoldItalic.ttf in Resources */,
+				CE914F5F2783791400B743E2 /* SFPRODISPLAYHEAVYITALIC.OTF in Resources */,
 				CEA508A8278207F000B358BD /* LaunchScreen.storyboard in Resources */,
+				CE914F542783791400B743E2 /* LICENSE.txt in Resources */,
+				CE914F512783791400B743E2 /* OpenSans-Bold.ttf in Resources */,
+				CE914F5E2783791400B743E2 /* SFPRODISPLAYSEMIBOLDITALIC.OTF in Resources */,
+				CE914F572783791400B743E2 /* ArbFONTS-Tajawal-Regular.ttf in Resources */,
+				CE914F522783791400B743E2 /* OpenSans-SemiBoldItalic.ttf in Resources */,
+				CE914F552783791400B743E2 /* OpenSans-Regular.ttf in Resources */,
+				CE914F5A2783791400B743E2 /* ArbFONTS-Tajawal-Bold.ttf in Resources */,
+				CE914F562783791400B743E2 /* OpenSans-BoldItalic.ttf in Resources */,
+				CE914F652783791400B743E2 /* SFPRODISPLAYMEDIUM.OTF in Resources */,
 				CEA508A5278207F000B358BD /* Assets.xcassets in Resources */,
+				CE914F602783791400B743E2 /* SFPRODISPLAYLIGHTITALIC.OTF in Resources */,
+				CE914F662783791400B743E2 /* SFPRODISPLAYULTRALIGHTITALIC.OTF in Resources */,
+				CE914F4D2783791400B743E2 /* OpenSans-Light.ttf in Resources */,
+				CE914F5D2783791400B743E2 /* ArbFONTS-Tajawal-Medium.ttf in Resources */,
+				CE914F592783791400B743E2 /* ArbFONTS-Tajawal-ExtraBold.ttf in Resources */,
+				CE914F4C2783791400B743E2 /* OpenSans-SemiBold.ttf in Resources */,
+				CE914F502783791400B743E2 /* OpenSans-LightItalic.ttf in Resources */,
 				CEA508E027820A1F00B358BD /* ReposListVC.xib in Resources */,
+				CE914F5C2783791400B743E2 /* ArbFONTS-Tajawal-Black.ttf in Resources */,
 				CE914EA327831EEA00B743E2 /* Config.plist in Resources */,
+				CE914F632783791400B743E2 /* SFPRODISPLAYTHINITALIC.OTF in Resources */,
 				CEA508A3278207EF00B358BD /* Main.storyboard in Resources */,
+				CE914F642783791400B743E2 /* SFPRODISPLAYBOLD.OTF in Resources */,
+				CE914F4A2783791400B743E2 /* Midnight_Drive_Two.otf in Resources */,
+				CE914F4F2783791400B743E2 /* OpenSans-ExtraBold.ttf in Resources */,
+				CE914F622783791400B743E2 /* SFPRODISPLAYREGULAR.OTF in Resources */,
+				CE914F5B2783791400B743E2 /* ArbFONTS-Tajawal-Light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,19 +657,144 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		29980891CADC66099B16B8AE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReposListApp-ReposListAppUITests/Pods-ReposListApp-ReposListAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReposListApp-ReposListAppUITests/Pods-ReposListApp-ReposListAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReposListApp-ReposListAppUITests/Pods-ReposListApp-ReposListAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		57DE9CF4C30D60F107A41B78 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReposListAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0FF818253DED292CA81E91E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReposListApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E68AAA222CFEAED4DBDE733B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReposListApp-ReposListAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD2E50CF7BA75022DE255B0E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReposListApp/Pods-ReposListApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReposListApp/Pods-ReposListApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReposListApp/Pods-ReposListApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CEA50894278207EF00B358BD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				CE914EC42783354600B743E2 /* Result.swift in Sources */,
+				CE914F772783791D00B743E2 /* BaseViewController.swift in Sources */,
 				CE914EBF2783352500B743E2 /* ServiceError.swift in Sources */,
 				CE914EB6278325F700B743E2 /* Reachability.swift in Sources */,
 				CEA508DF27820A1F00B358BD /* ReposListVC.swift in Sources */,
+				CE914F1B2783790600B743E2 /* TextField-color-Extention.swift in Sources */,
 				CE914EAF278324CC00B743E2 /* LoadImage.swift in Sources */,
+				CE914F1F2783790600B743E2 /* UIView+SomeCorner.swift in Sources */,
+				CE914F1C2783790600B743E2 /* UIButton-UILable + Underline.swift in Sources */,
 				CE914EA227831EEA00B743E2 /* Config.swift in Sources */,
 				CE914EB0278324CC00B743E2 /* DataGateway.swift in Sources */,
+				CE914F7A2783791D00B743E2 /* BaseVM.swift in Sources */,
+				CE914F1E2783790600B743E2 /* UIView+Border.swift in Sources */,
+				CE914F4B2783791400B743E2 /* ExtentionsForFont.swift in Sources */,
+				CE914F172783790600B743E2 /* UIView + Constranies.swift in Sources */,
+				CE914F1A2783790600B743E2 /* DashedView.swift in Sources */,
+				CE914F1D2783790600B743E2 /* gradientLabel.swift in Sources */,
+				CE914F182783790600B743E2 /* UIview+shimmer.swift in Sources */,
 				CEA5089C278207EF00B358BD /* AppDelegate.swift in Sources */,
+				CE914F232783790600B743E2 /* Double + RoundToPrecentage.swift in Sources */,
+				CE914F9627837A9C00B743E2 /* ReposListVM.swift in Sources */,
+				CE914F202783790600B743E2 /* AnimatedMaskLabel.swift in Sources */,
+				CE914F762783791D00B743E2 /* Route.swift in Sources */,
+				CE914F752783791D00B743E2 /* UIViewController+Route.swift in Sources */,
+				CE914F142783790600B743E2 /* ViewDesignable.swift in Sources */,
+				CE914F162783790600B743E2 /* UIColor + theme.swift in Sources */,
+				CE914F152783790600B743E2 /* UIColor+Hex.swift in Sources */,
+				CE914F222783790600B743E2 /* UIview+GradiantColor.swift in Sources */,
+				CE914F792783791D00B743E2 /* Dynamic.swift in Sources */,
+				CE914F132783790600B743E2 /* String + height.swift in Sources */,
 				CE914EB1278324CC00B743E2 /* State.swift in Sources */,
 				CE914EC92783480200B743E2 /* ApiClient.swift in Sources */,
 			);
@@ -549,6 +969,7 @@
 		};
 		CEA508C3278207F100B358BD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86015F1AEA61A4D2D8FC99BA /* Pods-ReposListApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -569,6 +990,7 @@
 		};
 		CEA508C4278207F100B358BD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A086D2479D95EF595B329FF /* Pods-ReposListApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -589,6 +1011,7 @@
 		};
 		CEA508C6278207F100B358BD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EC4B7FA0A5946B9C5077ECD /* Pods-ReposListAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -611,6 +1034,7 @@
 		};
 		CEA508C7278207F100B358BD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBC51B09F8D56EF3BD9C6897 /* Pods-ReposListAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -633,6 +1057,7 @@
 		};
 		CEA508C9278207F100B358BD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D505AD6BFE24C9FE7F3063BB /* Pods-ReposListApp-ReposListAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -653,6 +1078,7 @@
 		};
 		CEA508CA278207F100B358BD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D090865C600EAB001193F08 /* Pods-ReposListApp-ReposListAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

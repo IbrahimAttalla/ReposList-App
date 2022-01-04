@@ -4,8 +4,6 @@
 <dict>
 	<key>apiVersion</key>
 	<string>api</string>
-	<key>TestImageURL</key>
-	<string>https://apptamm.net/storage</string>
 	<key>BoldFont</key>
 	<string>Tajawal-Bold</string>
 	<key>SemiBoldFont</key>
