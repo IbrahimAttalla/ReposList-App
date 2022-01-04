@@ -28,41 +28,18 @@ open class BaseViewController: UIViewController, UIAlertViewDelegate {
     // MARK: - View Life Cycle
     
     override open func viewDidLoad() {
-//        NotificationCenter.default.addObserver(self, selector: #selector(reloadNavigationBar), name: .reloadNavigationBar, object: nil)
-//
-//        NotificationCenter.default.addObserver(self, selector: #selector(logOut), name: .forceLogOut, object: nil)
-//        NotificationCenter.default.addObserver(self, selector: #selector(showCartView), name: .showCart, object: nil)
-//        NotificationCenter.default.addObserver(self, selector: #selector(serverDown), name: .serverDown, object: nil)
-        
-        
-        
-        
-        if L102Language.currentAppleLanguage() == "ar" {
-            loopThroughSubViewAndFlipTheImageIfItsAUIImageView(subviews: self.view.subviews)
-        }
         
     }
     
     open override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-//        self.navigationItem.backBarButtonItem = UIBarButtonItem(image: R.image.auth.backNavBtn(), style: .plain, target: nil, action: nil)
-        
-//        self.navigationController?.navigationBar.backIndicatorImage =  R.image.auth.backNavBtn()
-//        self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = R.image.auth.backNavBtn()
-//        self.navigationController?.navigationBar.backItem?.title = ""
         
     }
     
     open override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         
-////        self.navigationController?.navigationBar.backIndicatorImage =  R.image.auth.backNavBtn()
-//        self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = R.image.auth.backNavBtn()
-//        self.navigationController?.navigationBar.backItem?.title = ""
-//
-//        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: NSLocalizedString("BACK", comment: ""), style: .plain, target: nil, action: nil)
-//        self.navigationItem.backBarButtonItem = UIBarButtonItem(image: R.image.auth.backNavBtn(), style: .plain, target: nil, action: nil)
 
         
     }
@@ -82,255 +59,9 @@ open class BaseViewController: UIViewController, UIAlertViewDelegate {
         navigationItem.backBarButtonItem = backItem // This will show in the next view controller being pushed
     }
 
-    /*
-    open func addLogoToNavBar(){
-        
-        // MARK:- center titel view
-        //        let logo = UIImage(named: "MiniLogo")
-        //        let imageView = UIImageView(image:logo)
-        //        imageView.contentMode = .scaleAspectFit
-        //        self.navigationItem.titleView = imageView
-        
-        // MARK:- center  ( button to route to home for ever )titel view
-        //        let button =  UIButton(type: .custom)
-        //        button.frame = CGRect(x: 0, y: 0, width: 100, height: 40)
-        //        button.backgroundColor = .clear
-        //        //button.setTitle("Button", for: .normal)
-        //        button.setImage(UIImage(named: "MiniLogo"), for: .normal)
-        //        button.addTarget(self, action: #selector(clickOnTitleBtn), for: .touchUpInside)
-        //        navigationItem.titleView = button
-        
-        
-        // MARK:- wallet view
-        
-        let walletLbl = UILabel()
-        walletLbl.font = UIFont.boldSystemFont(ofSize: 14)
-        walletLbl.text = NSLocalizedString("WALLET_Lbl", comment: "")
-        walletLbl.textColor = UIColor.AppMainColor
-        //        walletLbl.backgroundColor = .red
-        walletLbl.textAlignment = .center
-        
-        walletAmount.font = UIFont.systemFont(ofSize: 11)
-        //        walletAmount.text = "$ 0.0"
-        walletAmount.textColor = UIColor.TextGrayColor
-        walletAmount.textAlignment = .center
-        
-        let stackView = UIStackView(arrangedSubviews: [walletLbl, walletAmount])
-        stackView.axis = .vertical
-        stackView.spacing = -2
-        
-        let seperatorImg = UIImageView()
-        seperatorImg.image = UIImage(named: "navigation seperator Line ")
-        seperatorImg.frame = CGRect(x: 0, y: 0, width: 20, height:60)
-        seperatorImg.contentMode = .scaleToFill
-        seperatorImg.backgroundColor = .red
-        
-        //        let currancyLbl1 = UILabel()
-        //        currancyLbl1.font = UIFont.systemFont(ofSize: 14)
-        //        currancyLbl1.text = ""
-        //        currancyLbl1.textColor = UIColor.TextGrayColor
-        //        currancyLbl1.textAlignment = .center
-        //        currancyLbl1.backgroundColor = .red
-        //        currancyLbl1.frame.size = CGSize(width: 5, height: 50),
-        //        let seperatorView = UIView()
-        //        let size = CGSize(width: 5, height: 20)
-        //        seperatorView.frame.size = size
-        //        seperatorView.backgroundColor = UIColor.red
-        
-        
-        //        let seperatorStack = UIStackView(arrangedSubviews: [seperatorView])
-        //        seperatorStack.axis = .horizontal
-        let fullStackView = UIStackView(arrangedSubviews: [ stackView, seperatorImg])
-        fullStackView.axis = .horizontal
-        fullStackView.alignment = .fill
-        fullStackView.spacing = 10
-        let button2 = UIBarButtonItem()
-        
-        button2.customView = fullStackView
-        //                let button2 = UIBarButtonItem(image: UIImage(named: "SideMenuBtn"), style: .plain, target: self, action: #selector(walletViewTapped)) // action:#selector(Class.MethodName) for swift 3
-        
-        
-        //    navigationItem.titleView = stackView
-        let button1 = UIBarButtonItem(image: nil, style: .plain, target: self, action: #selector(walletViewTapped)) // action:#selector(Class.MethodName) for swift 3
-        
-        //MARK:- notification view
-        let notificationImg = UIImageView()
-        notificationImg.image = UIImage(named: "notificationLogo")
-        notificationImg.sizeThatFits(CGSize(width: 25, height: 25))
-        
-        
-        let notificationCounterLbl = UILabel()
-        notificationCounterLbl.font = UIFont.systemFont(ofSize: 15)
-        notificationCounterLbl.text = "0"
-        notificationCounterLbl.textColor = UIColor.black
-        notificationCounterLbl.textAlignment = .center
-        notificationCounterLbl.backgroundColor = UIColor.AppMainColor
-        
-        notificationCounterLbl.layer.cornerRadius = 11
-        notificationCounterLbl.clipsToBounds = true
-        
-        let stackView1 = UIStackView(arrangedSubviews: [notificationImg,notificationCounterLbl ])
-        stackView1.axis = .vertical
-        stackView1.spacing = -5
-        
-        let btun1 = UIBarButtonItem()
-        btun1.customView = stackView1
-        self.navigationItem.rightBarButtonItems = [btun1,button2]
-        
-        
-        //MARK:- Actions
-        
-        let tapGesture1 = UITapGestureRecognizer(target: self, action: #selector(self.notificationViewTapped(sender:)))
-        let tapGesture2 = UITapGestureRecognizer(target: self, action: #selector(self.notificationViewTapped(sender:)))
-        
-        notificationCounterLbl.isUserInteractionEnabled = true
-        notificationCounterLbl.addGestureRecognizer(tapGesture1)
-        
-        notificationImg.isUserInteractionEnabled = true
-        notificationImg.addGestureRecognizer(tapGesture2)
-        
-        
-        let tapGesture4 = UITapGestureRecognizer(target: self, action: #selector(self.walletViewTapped(sender:)))
-        let tapGesture3 = UITapGestureRecognizer(target: self, action: #selector(self.walletViewTapped(sender:)))
-        
-        walletLbl.isUserInteractionEnabled = true
-        walletLbl.addGestureRecognizer(tapGesture4)
-        
-        walletAmount.isUserInteractionEnabled = true
-        walletAmount.addGestureRecognizer(tapGesture3)
-        
-        
-        reloadNavigationBar()
-    }
-
-    */
-    open func navBarBackGround(catId :Int){
-        print("navBarBackGround " , catId)
-        DispatchQueue.main.asyncAfter(deadline: .now()) { [weak self] in
-            guard let self = self  else {return}
-        switch catId {
-        case 1:
-            self.navigationController?.navigationBar.barTintColor = R.color.carCatBG()
-
-        case 2:
-            self.navigationController?.navigationBar.barTintColor = R.color.realestateCatBG()
-
-        case 3:
-            self.navigationController?.navigationBar.barTintColor = R.color.electronicCatBG()
-
-        case 4:
-            self.navigationController?.navigationBar.barTintColor = R.color.mobileCatBG()
-
-        case 5:
-            self.navigationController?.navigationBar.barTintColor = R.color.otherCatBG()
-
-        default:
-            self.navigationController?.navigationBar.barTintColor = R.color.appMainColor()
-        }
-            self.navigationController?.navigationBar.tintColor = .white
-            
-        }
-    }
     
     
-    open func navBarSetting(backImg:UIImage? , backTitle:String? , navTitle:String?, navBigSize:Bool?){
-        DispatchQueue.main.asyncAfter(deadline: .now()) { [weak self] in
-            self?.navigationController?.navigationBar.barTintColor = R.color.appMainColor()
-
-            if backTitle != nil {
-                print("backTitle == ",backTitle!)
-                self?.navigationController?.navigationBar.backItem?.title = ""
-//                self?.navigationController?.navigationBar.backItem?.backBarButtonItem?.title = backTitle ?? ""
-            }else{
-                self?.navigationController?.navigationBar.backItem?.title = ""
-//                self?.navigationController?.navigationBar.backItem?.backBarButtonItem?.title  = ""
-            }
-
-            
-        
-        if backImg != nil {
-            self?.navigationController?.navigationBar.backIndicatorImage = backImg
-            self?.navigationController?.navigationBar.backIndicatorTransitionMaskImage = backImg
-
-        }else{
-            self?.navigationController?.navigationBar.backIndicatorImage =  R.image.auth.backNavBtn()
-            self?.navigationController?.navigationBar.backIndicatorTransitionMaskImage = R.image.auth.backNavBtn()
-
-        }
-        
-        
-        
-        if navBigSize ?? false {
-            self?.navigationController?.navigationBar.prefersLargeTitles = navBigSize ?? true
-            self?.navigationController?.navigationBar.backItem?.title = ""
-            self?.navigationController?.navigationItem.largeTitleDisplayMode =  .automatic
-            self?.title = navTitle
-
-        }else{
-            self?.navigationController?.navigationBar.prefersLargeTitles = navBigSize!
-            self?.navigationController?.navigationBar.backItem?.title = navTitle
-        }
-          
-
-        }
-
-//        DispatchQueue.main.async { [weak self] in
-//
-//            if backTitle != nil {
-//                print("backTitle == ",backTitle)
-//                self?.navigationController?.navigationBar.backItem?.title = backTitle ?? ""
-////                self?.navigationController?.navigationBar.backItem?.backBarButtonItem?.title = backTitle ?? ""
-//            }else{
-//                self?.navigationController?.navigationBar.backItem?.title = ""
-////                self?.navigationController?.navigationBar.backItem?.backBarButtonItem?.title  = ""
-//            }
-//
-//
-//
-//        if backImg != nil {
-//            self?.navigationController?.navigationBar.backIndicatorImage = backImg
-//            self?.navigationController?.navigationBar.backIndicatorTransitionMaskImage = backImg
-//
-//        }else{
-//            self?.navigationController?.navigationBar.backIndicatorImage =  R.image.auth.backNavBtn()
-//            self?.navigationController?.navigationBar.backIndicatorTransitionMaskImage = R.image.auth.backNavBtn()
-//
-//        }
-//
-//
-//
-//        if navBigSize ?? false {
-//            self?.navigationController?.navigationBar.prefersLargeTitles = navBigSize ?? true
-//            self?.navigationController?.navigationBar.backItem?.title = ""
-//            self?.title = navTitle
-//
-//        }else{
-//            self?.navigationController?.navigationBar.prefersLargeTitles = navBigSize!
-//            self?.navigationController?.navigationBar.backItem?.title = navTitle
-//        }
-//
-//
-//        }
-        
-    }
     
-    @objc func logOut() {
-        
-        print("forceLogoutDone => ", forceLogoutDone)
-        if !forceLogoutDone {
-            
-//            let defaults = UserDefaults.standard
-//            defaults.removeObject(forKey: "UserData")
-//            defaults.removeObject(forKey: "Access_Token")
-//            defaults.synchronize()
-//            forceLogoutDone = true
-//
-//            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//            let vc = storyboard.instantiateViewController(withIdentifier: "LoginVC") as! LoginVC
-//            self.present(vc, animated: true, completion: nil)
-      
-        }
-    }
     
     func hideKeyboardWhenTappedAround() {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
@@ -375,9 +106,6 @@ open class BaseViewController: UIViewController, UIAlertViewDelegate {
     
     
     open func setNavBackText(){
-//        let backItem = UIBarButtonItem()
-//        backItem.title = NSLocalizedString("BACK", comment: "")
-//        navigationItem.backBarButtonItem = backItem // This will show in the next view controller being pushed
         navigationController?.navigationBar.topItem?.title   = NSLocalizedString("BACK", comment: "")
 
     }
