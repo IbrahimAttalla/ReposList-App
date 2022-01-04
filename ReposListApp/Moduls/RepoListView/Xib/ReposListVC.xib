@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReposListVC" customModule="ReposListApp" customModuleProvider="target">
             <connections>
+                <outlet property="reposListTV" destination="xo7-2M-YpH" id="fIi-ii-3zI"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,12 +19,30 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xo7-2M-YpH">
+                    <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </tableView>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemYellowColor"/>
-            <point key="canvasLocation" x="46" y="116"/>
+            <constraints>
+                <constraint firstItem="xo7-2M-YpH" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="29b-g9-LlV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xo7-2M-YpH" secondAttribute="trailing" id="H5t-Xk-R8p"/>
+                <constraint firstAttribute="bottom" secondItem="xo7-2M-YpH" secondAttribute="bottom" id="NxA-LF-UqB"/>
+                <constraint firstItem="xo7-2M-YpH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="QLV-UX-Azd"/>
+            </constraints>
+            <point key="canvasLocation" x="44.927536231884062" y="115.84821428571428"/>
         </view>
     </objects>
     <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

@@ -23,7 +23,7 @@ class LoadImage{
     func downloadImage(from url: URL, completion: @escaping getImageCompleted) {
         getData(from: url) { data, response, error in
             guard let data = data, error == nil else { return }
-            print("  📸 📸   image data  " , data)
+        //    print("  📸 📸   image data  " , data)
             let image = UIImage(data: data)
             completion(image)
         }
@@ -32,6 +32,7 @@ class LoadImage{
     func getData(from url: URL, completion: @escaping (Data?, URLResponse?, Error?) -> ()) {
         URLSession.shared.dataTask(with: url, completionHandler: completion).resume()
     }
+    
     
     
     

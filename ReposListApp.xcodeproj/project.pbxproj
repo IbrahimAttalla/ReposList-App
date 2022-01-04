@@ -76,8 +76,11 @@
 		CEA508BE278207F000B358BD /* ReposListAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA508BD278207F000B358BD /* ReposListAppUITests.swift */; };
 		CEA508DF27820A1F00B358BD /* ReposListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA508DD27820A1F00B358BD /* ReposListVC.swift */; };
 		CEA508E027820A1F00B358BD /* ReposListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA508DE27820A1F00B358BD /* ReposListVC.xib */; };
+		CEE701DE27849A4000692B67 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEE701DD27849A4000692B67 /* Colors.xcassets */; };
 		CEE9EF352784673B0095E11F /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE9EF342784673B0095E11F /* Repo.swift */; };
 		CEE9EF3A278467580095E11F /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE9EF39278467580095E11F /* Owner.swift */; };
+		CEE9EF40278468E60095E11F /* RepoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE9EF3E278468E60095E11F /* RepoCell.swift */; };
+		CEE9EF41278468E60095E11F /* RepoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE9EF3F278468E60095E11F /* RepoCell.xib */; };
 		D010B2A261AAF1593F7A3CF6 /* Pods_ReposListApp_ReposListAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D22F8C5F17EA74573994F395 /* Pods_ReposListApp_ReposListAppUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -178,8 +181,11 @@
 		CEA508BF278207F100B358BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEA508DD27820A1F00B358BD /* ReposListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposListVC.swift; sourceTree = "<group>"; };
 		CEA508DE27820A1F00B358BD /* ReposListVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReposListVC.xib; sourceTree = "<group>"; };
+		CEE701DD27849A4000692B67 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		CEE9EF342784673B0095E11F /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
 		CEE9EF39278467580095E11F /* Owner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
+		CEE9EF3E278468E60095E11F /* RepoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoCell.swift; sourceTree = "<group>"; };
+		CEE9EF3F278468E60095E11F /* RepoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepoCell.xib; sourceTree = "<group>"; };
 		D22F8C5F17EA74573994F395 /* Pods_ReposListApp_ReposListAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReposListApp_ReposListAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D505AD6BFE24C9FE7F3063BB /* Pods-ReposListApp-ReposListAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReposListApp-ReposListAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-ReposListApp-ReposListAppUITests/Pods-ReposListApp-ReposListAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D825DEE5DFC2F842780243EA /* Pods_ReposListApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReposListApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -217,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				CEA508A4278207F000B358BD /* Assets.xcassets */,
+				CEE701DD27849A4000692B67 /* Colors.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -272,6 +279,7 @@
 			isa = PBXGroup;
 			children = (
 				CEA508DE27820A1F00B358BD /* ReposListVC.xib */,
+				CEE9EF3F278468E60095E11F /* RepoCell.xib */,
 			);
 			path = Xib;
 			sourceTree = "<group>";
@@ -468,6 +476,7 @@
 				CE914EED278373DE00B743E2 /* Xib */,
 				CEA508DD27820A1F00B358BD /* ReposListVC.swift */,
 				CE914F9527837A9C00B743E2 /* ReposListVM.swift */,
+				CEE9EF3E278468E60095E11F /* RepoCell.swift */,
 			);
 			path = RepoListView;
 			sourceTree = "<group>";
@@ -639,6 +648,7 @@
 				CE914F662783791400B743E2 /* SFPRODISPLAYULTRALIGHTITALIC.OTF in Resources */,
 				CE914F4D2783791400B743E2 /* OpenSans-Light.ttf in Resources */,
 				CE914F5D2783791400B743E2 /* ArbFONTS-Tajawal-Medium.ttf in Resources */,
+				CEE701DE27849A4000692B67 /* Colors.xcassets in Resources */,
 				CE914F592783791400B743E2 /* ArbFONTS-Tajawal-ExtraBold.ttf in Resources */,
 				CE914F4C2783791400B743E2 /* OpenSans-SemiBold.ttf in Resources */,
 				CE914F502783791400B743E2 /* OpenSans-LightItalic.ttf in Resources */,
@@ -648,6 +658,7 @@
 				CE914F632783791400B743E2 /* SFPRODISPLAYTHINITALIC.OTF in Resources */,
 				CEA508A3278207EF00B358BD /* Main.storyboard in Resources */,
 				CE914F642783791400B743E2 /* SFPRODISPLAYBOLD.OTF in Resources */,
+				CEE9EF41278468E60095E11F /* RepoCell.xib in Resources */,
 				CE914F4A2783791400B743E2 /* Midnight_Drive_Two.otf in Resources */,
 				CE914F4F2783791400B743E2 /* OpenSans-ExtraBold.ttf in Resources */,
 				CE914F622783791400B743E2 /* SFPRODISPLAYREGULAR.OTF in Resources */,
@@ -794,6 +805,7 @@
 				CE914F7A2783791D00B743E2 /* BaseVM.swift in Sources */,
 				CE914F1E2783790600B743E2 /* UIView+Border.swift in Sources */,
 				CE914F4B2783791400B743E2 /* ExtentionsForFont.swift in Sources */,
+				CEE9EF40278468E60095E11F /* RepoCell.swift in Sources */,
 				CE914F172783790600B743E2 /* UIView + Constranies.swift in Sources */,
 				CE914F1A2783790600B743E2 /* DashedView.swift in Sources */,
 				CE914F1D2783790600B743E2 /* gradientLabel.swift in Sources */,

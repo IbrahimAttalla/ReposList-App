@@ -32,14 +32,11 @@ class DataGetway: DataServiceProtocol {
             case .success(let value):
 
 
-                print("gateWay Response value " , value)
+            //    print("gateWay Response value " , value)
                 guard let dataResponse = response.value else { return }
                 do {
                     let decoder = JSONDecoder()
                     let list = try decoder.decode([Repo].self, from:dataResponse as! Data)
-
-                    print(" 😉😉 List Arr ==>> \(list.count) item here    ... " ,list.first )
-
                     completion(.success(list))
 
                 }

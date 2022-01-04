@@ -134,8 +134,8 @@ open class BaseViewController: UIViewController, UIAlertViewDelegate {
         let icon = UIImage(named: "Warning-Sign")
         alert.iconImage = icon
         
-        alert.titleColor = UIColor.TextDarkColor
-        alert.messageColor = UIColor.TextDarkColor
+        alert.titleColor = UIColor.AppMainColor
+        alert.messageColor = UIColor.AppMainColor
         alert.cornerRadius = 10
         alert.view.borderColor = UIColor.AppMainColor
         alert.backgroundColor = UIColor.white
