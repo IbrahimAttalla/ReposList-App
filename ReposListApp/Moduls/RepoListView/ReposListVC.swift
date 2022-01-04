@@ -20,26 +20,16 @@ class ReposListVC: BaseViewController {
     var list = [Repo]()
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.navigationBar.isHidden = false
         
         initBind()
         initView()
-        
-        let gateway = DataGetway()
-        //        gateway.fetchReposList() { (response) in
-        //            self.list = response.value!
-        //            DispatchQueue.main.async {
-        //                self.reposListTV.reloadData()
-        //
-        //            }
-        //            print(" vc response " , response.value?.first)
-        //            print(" vc error " , response.error?.localizedDescription ?? "")
-        //        }
     }
     
     
     func initView(){
         
+        self.navigationController?.navigationBar.isHidden = false
+
         reposListTV.delegate = self
         reposListTV.dataSource = self
         reposListTV.register(UINib(nibName: RepoCell.idAndNib, bundle: nil), forCellReuseIdentifier: RepoCell.idAndNib)
@@ -65,7 +55,7 @@ class ReposListVC: BaseViewController {
                 }
             case false:
                 DispatchQueue.main.async {
-                    SVProgressHUD.dismiss()
+                  //  SVProgressHUD.dismiss()
                     self.reposListTV.stopSkeletonAnimation()
                     self.reposListTV.hideSkeleton()
                     //                    SVProgressHUD.setDefaultMaskType(.clear)
@@ -82,6 +72,20 @@ class ReposListVC: BaseViewController {
             
         }
         
+        vm.showPaginationLoading.bind { (showLoading) in
+            if showLoading{
+                DispatchQueue.main.async {
+                    SVProgressHUD.show()
+                    SVProgressHUD.setDefaultMaskType(.black)
+                }
+
+            }else{
+                DispatchQueue.main.async {
+                    SVProgressHUD.dismiss()
+                    SVProgressHUD.setDefaultMaskType(.clear)
+                }
+            }
+        }
         
         vm.successMessage.bind{msg in
             //  self.displayTost(message: msg)
@@ -101,10 +105,9 @@ class ReposListVC: BaseViewController {
         
         vm.reposList.bind { (list) in
             DispatchQueue.main.async {
+
                 self.reposListTV.reloadData()
-                
             }
-            
         }
         
         
@@ -144,4 +147,14 @@ extension ReposListVC: UITableViewDelegate , UITableViewDataSource{
     }
     
     
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+                if tableView == reposListTV{
+        print("last index = ", indexPath.row)
+                    if indexPath.row == (vm.reposList.value!.count)-1 {
+                    vm.loadMoreData()
+                 }
+                }
+            }
+
+
 }
