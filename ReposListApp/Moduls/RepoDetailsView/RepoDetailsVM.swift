@@ -24,6 +24,17 @@ class RepoDetailsVM:BaseViewModel{
     var repoDescription: Observable<String?> = Observable("")
     var nodeId: Observable<String?> = Observable("")
 
+    var url: Observable<String?> = Observable("")
+    var fork: Observable<String?> = Observable("")
+    var key: Observable<String?> = Observable("")
+    var collabration: Observable<String?> = Observable("")
+    var teams: Observable<String?> = Observable("")
+    var hooks: Observable<String?> = Observable("")
+    var issue: Observable<String?> = Observable("")
+    var events: Observable<String?> = Observable("")
+    var assignees: Observable<String?> = Observable("")
+    var branch: Observable<String?> = Observable("")
+
     var selectedRepo:Repo
     var loadingImg = LoadImage()
     
@@ -53,6 +64,22 @@ class RepoDetailsVM:BaseViewModel{
         repoId.value = "\(repo.id ?? 0)"
         repoDescription.value = repo.repoDescription
         nodeId.value = repo.nodeID ?? ""
+      
+        key.value = repo.keysURL ?? ""
+        url.value = repo.url ?? ""
+        fork.value = repo.forksURL ?? ""
+        collabration.value = repo.collaboratorsURL ?? ""
+        teams.value = repo.teamsURL ?? ""
+        hooks.value = repo.hooksURL ?? ""
+        issue.value = repo.issuesURL ?? ""
+        events.value = repo.eventsURL ?? ""
+        assignees.value = repo.assigneesURL ?? ""
+        branch.value = repo.branchesURL ?? ""
+
+        
+        
+        
+        
         
         showLoadingHud.value = true
         loadingImg.downloadImage(from: URL(string: repo.owner?.avatarURL ?? "")!   ) { [weak self](img) in

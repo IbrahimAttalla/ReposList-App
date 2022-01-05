@@ -18,6 +18,18 @@ class RepoDetailsVC: BaseViewController {
     @IBOutlet weak var descriptionLbl: UILabel!
     @IBOutlet weak var nodeIdLbl: UILabel!
     
+    @IBOutlet weak var urlLbl: UILabel!
+    @IBOutlet weak var forkUrl: UILabel!
+    @IBOutlet weak var keyLbl: UILabel!
+    @IBOutlet weak var collabrationLbl: UILabel!
+    @IBOutlet weak var teamsLbl: UILabel!
+    @IBOutlet weak var hooksLbl: UILabel!
+    @IBOutlet weak var issueLbl: UILabel!
+    @IBOutlet weak var eventsLbl: UILabel!
+    @IBOutlet weak var assigneesLbl: UILabel!
+    @IBOutlet weak var branchLbl: UILabel!
+    
+    
     var vm:RepoDetailsVM!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,7 +76,19 @@ class RepoDetailsVC: BaseViewController {
         vm.repoId.bind(to: idLbl)
         vm.repoDescription.bind(to: descriptionLbl)
         vm.nodeId.bind(to: nodeIdLbl)
-        
+      
+        vm.url.bind(to: urlLbl)
+        vm.key.bind(to: keyLbl)
+
+        vm.fork.bind(to: forkUrl)
+        vm.collabration.bind(to: collabrationLbl)
+        vm.teams.bind(to: teamsLbl)
+        vm.hooks.bind(to: hooksLbl)
+        vm.issue.bind(to: issueLbl)
+        vm.events.bind(to: eventsLbl)
+        vm.assignees.bind(to: assigneesLbl)
+        vm.branch.bind(to: branchLbl)
+
         
         
     }
