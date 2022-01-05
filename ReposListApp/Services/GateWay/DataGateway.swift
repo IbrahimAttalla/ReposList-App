@@ -9,7 +9,7 @@ import Foundation
 
 
 
-protocol DataServiceProtocol {
+protocol ApiDataServiceProtocol {
     func fetchReposList( completion: @escaping (_ responce: Result<[Repo], ServiceError> ) -> () )
 }
 
@@ -19,7 +19,7 @@ protocol DataServiceProtocol {
 
 // MARK:- DataGetway class
 
-class DataGetway: DataServiceProtocol {
+class DataGetway: ApiDataServiceProtocol {
     
     let apiClient: APIClient
     init(apiClient: APIClient = APIClientImp()) { self.apiClient = apiClient }
@@ -31,19 +31,15 @@ class DataGetway: DataServiceProtocol {
             switch response{
             case .success(let value):
 
-
-            //    print("gateWay Response value " , value)
                 guard let dataResponse = response.value else { return }
                 do {
                     let decoder = JSONDecoder()
                     let list = try decoder.decode([Repo].self, from:dataResponse as! Data)
                     completion(.success(list))
-
                 }
                 catch let err {
                     completion(.failure(.custom(err.localizedDescription ?? "")))
                 }
-
                 
             case .failure(let error):
                 completion(.failure(error))

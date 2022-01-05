@@ -82,6 +82,10 @@
 		CEA508BE278207F000B358BD /* ReposListAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA508BD278207F000B358BD /* ReposListAppUITests.swift */; };
 		CEA508DF27820A1F00B358BD /* ReposListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA508DD27820A1F00B358BD /* ReposListVC.swift */; };
 		CEA508E027820A1F00B358BD /* ReposListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA508DE27820A1F00B358BD /* ReposListVC.xib */; };
+		CEE4B6B22785B4BE00E6BA26 /* Stub.json in Resources */ = {isa = PBXBuildFile; fileRef = CEE4B6B12785B4BE00E6BA26 /* Stub.json */; };
+		CEE4B6BA2785B4F900E6BA26 /* Bundle+unitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE4B6B92785B4F900E6BA26 /* Bundle+unitTest.swift */; };
+		CEE4B6D22785BD2600E6BA26 /* APIServiceMoke.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE4B6D12785BD2600E6BA26 /* APIServiceMoke.swift */; };
+		CEE4B6DA2785BE6100E6BA26 /* ReposListVMTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE4B6D92785BE6100E6BA26 /* ReposListVMTest.swift */; };
 		CEE701DE27849A4000692B67 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEE701DD27849A4000692B67 /* Colors.xcassets */; };
 		CEE701F62784B3E600692B67 /* Array+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE701F52784B3E600692B67 /* Array+extension.swift */; };
 		CEE9EF352784673B0095E11F /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE9EF342784673B0095E11F /* Repo.swift */; };
@@ -194,6 +198,10 @@
 		CEA508BF278207F100B358BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEA508DD27820A1F00B358BD /* ReposListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposListVC.swift; sourceTree = "<group>"; };
 		CEA508DE27820A1F00B358BD /* ReposListVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReposListVC.xib; sourceTree = "<group>"; };
+		CEE4B6B12785B4BE00E6BA26 /* Stub.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Stub.json; sourceTree = "<group>"; };
+		CEE4B6B92785B4F900E6BA26 /* Bundle+unitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+unitTest.swift"; sourceTree = "<group>"; };
+		CEE4B6D12785BD2600E6BA26 /* APIServiceMoke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceMoke.swift; sourceTree = "<group>"; };
+		CEE4B6D92785BE6100E6BA26 /* ReposListVMTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposListVMTest.swift; sourceTree = "<group>"; };
 		CEE701DD27849A4000692B67 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		CEE701F52784B3E600692B67 /* Array+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+extension.swift"; sourceTree = "<group>"; };
 		CEE9EF342784673B0095E11F /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
@@ -461,6 +469,10 @@
 			isa = PBXGroup;
 			children = (
 				CEA508B2278207F000B358BD /* ReposListAppTests.swift */,
+				CEE4B6D92785BE6100E6BA26 /* ReposListVMTest.swift */,
+				CEE4B6D12785BD2600E6BA26 /* APIServiceMoke.swift */,
+				CEE4B6B92785B4F900E6BA26 /* Bundle+unitTest.swift */,
+				CEE4B6B12785B4BE00E6BA26 /* Stub.json */,
 				CEA508B4278207F000B358BD /* Info.plist */,
 			);
 			path = ReposListAppTests;
@@ -700,6 +712,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEE4B6B22785B4BE00E6BA26 /* Stub.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -868,6 +881,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEE4B6BA2785B4F900E6BA26 /* Bundle+unitTest.swift in Sources */,
+				CEE4B6D22785BD2600E6BA26 /* APIServiceMoke.swift in Sources */,
+				CEE4B6DA2785BE6100E6BA26 /* ReposListVMTest.swift in Sources */,
 				CEA508B3278207F000B358BD /* ReposListAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

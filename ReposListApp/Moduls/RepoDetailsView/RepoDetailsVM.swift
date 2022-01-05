@@ -10,7 +10,7 @@ class RepoDetailsVM:BaseViewModel{
     
     //MARK:- GateWay  & Passed Data---
     
-    let dataGateWay : DataServiceProtocol
+    let dataGateWay : ApiDataServiceProtocol
     
     
     
@@ -29,7 +29,7 @@ class RepoDetailsVM:BaseViewModel{
     
     //MARK:- DI ----
     
-    init( dataGateWay : DataServiceProtocol = DataGetway(),selectedRepo:Repo ) {
+    init( dataGateWay : ApiDataServiceProtocol = DataGetway(),selectedRepo:Repo ) {
         self.dataGateWay = dataGateWay
         self.selectedRepo = selectedRepo
     }

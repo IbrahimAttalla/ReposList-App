@@ -10,7 +10,7 @@ class ReposListVM:BaseViewModel{
     
     //MARK:- GateWay  & Passed Data---
     
-    let dataGateWay : DataServiceProtocol
+    let dataGateWay : ApiDataServiceProtocol
     
     
     
@@ -28,7 +28,7 @@ class ReposListVM:BaseViewModel{
     
     //MARK:- DI ----
     
-    init( dataGateWay : DataServiceProtocol = DataGetway()) {
+    init( dataGateWay : ApiDataServiceProtocol = DataGetway()) {
         self.dataGateWay = dataGateWay
     }
     
@@ -95,12 +95,12 @@ class ReposListVM:BaseViewModel{
     }
     
     
+    
+    //MARK:- search in List   ---
+
     func search(with text :String){
         let searchResult  = baseReposList.filter{$0.name!.lowercased().contains(text.lowercased())}
 
-        print("text = ",text)
-        print("baseResult = ", baseReposList.count)
-        print("searchResult = ", searchResult.count)
         if !(searchResult.isEmpty) {
             reposList.value?.removeAll()
             reposList.value = searchResult
@@ -108,6 +108,9 @@ class ReposListVM:BaseViewModel{
     }
     
     
+    
+    //MARK:- reset RepsList   ---
+
     func resetRepsList(){
         reposList.value?.removeAll()
         if !chunckedList.isEmpty {
@@ -115,6 +118,7 @@ class ReposListVM:BaseViewModel{
         }
 
     }
+    
     
 }
 
